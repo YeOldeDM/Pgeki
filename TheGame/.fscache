@@ -1,12 +1,13 @@
-::res://::1443733858
+::res://::1443737260
 BG.scn::PackedScene::1443526913::
 brub.gd::GDScript::1443733189::
 brub.scn::PackedScene::1443733186::
-game.scn::PackedScene::1443733852::
+game.scn::PackedScene::1443734296::
 icon.png::ImageTexture::1443487814::
 level 0.scn::PackedScene::1443661407::
 parallaxBG.scn::PackedScene::1443646361::
-player.gd::GDScript::1443733858::
+pk_icon.png::ImageTexture::1443734278::
+player.gd::GDScript::1443737260::
 player.xml::PackedScene::1443731305::
 spear.gd::GDScript::1443733189::
 spear.xml::PackedScene::1443729378::

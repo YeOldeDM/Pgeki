@@ -5,8 +5,9 @@ extends RigidBody2D
 # var a=2
 # var b="textvar"
 
+
 var lifetime = -1
-var TIME_LIMIT = 120
+var TIME_LIMIT = 60
 var did_hit=false
 var blinker=true
 var blink_timer=0
