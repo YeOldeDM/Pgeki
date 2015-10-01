@@ -1,12 +1,12 @@
-::res://::1443733528
+::res://::1443733858
 BG.scn::PackedScene::1443526913::
 brub.gd::GDScript::1443733189::
 brub.scn::PackedScene::1443733186::
-game.scn::PackedScene::1443729209::
+game.scn::PackedScene::1443733852::
 icon.png::ImageTexture::1443487814::
 level 0.scn::PackedScene::1443661407::
 parallaxBG.scn::PackedScene::1443646361::
-player.gd::GDScript::1443733528::
+player.gd::GDScript::1443733858::
 player.xml::PackedScene::1443731305::
 spear.gd::GDScript::1443733189::
 spear.xml::PackedScene::1443729378::
@@ -18,9 +18,9 @@ tileset_village.scn::PackedScene::1443685622::
 ::res://extra::1443733274
 boss.png::ImageTexture::1443682756::
 brub.png::ImageTexture::1443684860::
-::res://graphics::1443733274
+::res://graphics::1443733774
 Pkegi_walk.png::ImageTexture::1443645625::
-Pkegi_walk.tex::ImageTexture::1443666880::texture_2d<>graphics/Pkegi_walk.png<>110a40900e0ff3a04965dc80ad690684<>1443645625
+Pkegi_walk.tex::ImageTexture::1443733774::texture_2d<>graphics/Pkegi_walk.png<>110a40900e0ff3a04965dc80ad690684<>1443645625
 background1.png::ImageTexture::1443646042::
 brub_bounce.png::ImageTexture::1443686037::
 spear.png::ImageTexture::1443692406::
