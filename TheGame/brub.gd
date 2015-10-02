@@ -13,9 +13,12 @@ var bounce_timer=0
 var BOUNCE_RATE = 120
 var BOUNCE_VELOCITY = 80.0
 
+var POINT_VALUE = 100
+
 var spear_class = preload('res://spear.gd')
 
 func _die():
+	get_node('/root/globals').SCORE += POINT_VALUE
 	queue_free()
 
 func _integrate_forces(state):
