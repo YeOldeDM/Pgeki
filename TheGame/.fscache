@@ -1,15 +1,17 @@
-::res://::1443741018
+::res://::1443750793
 BG.scn::PackedScene::1443526913::
-brub.gd::GDScript::1443741018::
-brub.scn::PackedScene::1443738152::
-game.scn::PackedScene::1443741017::
+brub.gd::GDScript::1443750793::
+brub.scn::PackedScene::1443746432::
+game.scn::PackedScene::1443748355::
+global.gd::GDScript::1443750793::
 icon.png::ImageTexture::1443487814::
 level 0.scn::PackedScene::1443738047::
 parallaxBG.scn::PackedScene::1443646361::
 pk_icon.png::ImageTexture::1443734278::
-player.gd::GDScript::1443741018::
+player.gd::GDScript::1443750793::
 player.xml::PackedScene::1443738668::
-spear.gd::GDScript::1443741018::
+score.gd::GDScript::1443750793::
+spear.gd::GDScript::1443750793::
 spear.xml::PackedScene::1443740554::
 testTiles.xml::TileSet::1443572530::
 tileset1.scn::PackedScene::1443572541::
@@ -19,8 +21,8 @@ tileset_village.scn::PackedScene::1443685622::
 ::res://extra::1443733274
 boss.png::ImageTexture::1443682756::
 brub.png::ImageTexture::1443684860::
-::res://fonts::1443740973
-PSTART.fnt::Font::1443740973::font<>fonts/prstartk.ttf<>511924b7607707fb663590e2b62a3733<>1014923002
+::res://fonts::1443742884
+MAINFONT.fnt::Font::1443742884::font<>fonts/04B_03__.TTF<>a369d5ae69d27702db1251ae041315be<>1048652526
 ::res://graphics::1443733774
 Pkegi_walk.png::ImageTexture::1443645625::
 Pkegi_walk.tex::ImageTexture::1443733774::texture_2d<>graphics/Pkegi_walk.png<>110a40900e0ff3a04965dc80ad690684<>1443645625

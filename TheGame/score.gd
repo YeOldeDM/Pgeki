@@ -26,6 +26,6 @@ func _process(delta):
 		my_score = real_score
 	var int_score = int(my_score) 
 	set_text(str(int_score))
-	print(my_score)
+	#print(my_score)
 
 

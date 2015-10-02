@@ -39,7 +39,7 @@ func _process(delta):
 		if(lifetime >= TIME_LIMIT*0.65):	
 			blink()
 func done():
-	get_parent().get_child(0).call('done_shooting')
+	get_node('/root/Root/Toon').call('done_shooting')
 	queue_free()
 
 func blink():
