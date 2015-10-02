@@ -8,6 +8,9 @@ extends RigidBody2D
 
 var lifetime = -1
 var TIME_LIMIT = 60
+var hold_timer=0
+var THROW_ATK=13	#frames before throwing
+var pre_throw=true
 var did_hit=false
 var blinker=true
 var blink_timer=0

@@ -20,6 +20,7 @@ var stopping_jump=false
 var did_step = 0
 var did_shoot=false
 
+
 #Movement Variables#
 var WALK_ATK = 300.0
 var WALK_DEC = 300.0
@@ -64,7 +65,6 @@ func _integrate_forces(state):
 	
 	#handle spear-chucking
 	if (action and not did_shoot):
-		print("Speard!")
 		var bullet = spear.instance()
 		var pos = get_pos()
 		bullet.set_pos(pos)
@@ -72,11 +72,10 @@ func _integrate_forces(state):
 		if facing == -1:
 			bullet.set_rot(deg2rad(180.0))
 		bullet.set_linear_velocity( Vector2(SPEAR_SPEED*facing, SPEAR_DROP))
-		get_node('sound').play('toss')
 		PS2D.body_add_collision_exception(bullet.get_rid(),get_rid())
 		did_shoot = true
-		
-		
+
+
 	#find the floor (a contact with upward facing collision normal)
 	var found_floor=false
 	var floor_index = -1

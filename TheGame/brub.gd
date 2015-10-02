@@ -11,7 +11,7 @@ var hit_timer=0
 
 var bounce_timer=0
 var BOUNCE_RATE = 120
-var BOUNCE_VELOCITY = 80.0
+var BOUNCE_VELOCITY = 100.0
 var first_land=false
 
 var POINT_VALUE = 100
