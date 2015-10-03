@@ -20,6 +20,10 @@ var stopping_jump=false
 var did_step = 0
 var did_shoot=false
 
+var is_hit=false
+var hit_timer=0
+var hit_timelimit=3.0
+
 
 #Movement Variables#
 var WALK_ATK = 300.0
@@ -198,6 +202,23 @@ func _integrate_forces(state):
 	
 func done_shooting():
 	did_shoot = false
+
+func get_hit(origin):
+	if not is_hit:
+		var life = get_node('/root/globals').LIFE
+		if(life>0):
+			life -= 1
+		get_node('/root/globals').LIFE = life
+		var target_pos = origin.get_pos()
+		var my_pos = get_pos()
+		var vect = target_pos - my_pos
+		vect.y = abs(vect.y)*20
+		var dir = Vector2(target_pos.x-my_pos.x,target_pos.y - my_pos.y)
+		set_linear_velocity(-dir*16)
+		is_hit=true
+		get_node('/root/Root/hud/hearts')._draw_hearts()
+		print("I got hit!")
+	
 	
 func _ready():
 	set_process(true)
@@ -205,4 +226,10 @@ func _ready():
 func _process(delta):
 	if Input.is_action_pressed('respawn'):
 		set_pos(respawn_point)
+	if is_hit:
+		hit_timer += delta
+		if hit_timer >= hit_timelimit:
+			hit_timer=0
+			is_hit=false
+		
 

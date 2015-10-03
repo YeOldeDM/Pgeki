@@ -17,7 +17,7 @@ var first_land=false
 var POINT_VALUE = 100
 
 var spear_class = preload('res://spear.gd')
-
+var player_class = preload('res://player.gd')
 
 func _die():
 	get_node('/root/globals').SCORE += POINT_VALUE
@@ -61,7 +61,8 @@ func _integrate_forces(state):
 				col.call('done')
 				is_hit=true
 				break
-				
+			elif (col extends player_class and not is_hit):
+				get_node('../../Toon').get_hit(self)
 	if (is_hit):
 		hit_timer += 1
 		if(hit_timer >= 20):
