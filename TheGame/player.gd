@@ -6,6 +6,9 @@ extends RigidBody2D
 #	based on the Demo by Juan Linietsky
 #####
 
+#Mob Spawner
+var mob = preload('res://brub.xml')
+
 #Spear preload
 var spear = preload('res://spear.xml')
 
@@ -226,6 +229,14 @@ func _ready():
 func _process(delta):
 	if Input.is_action_pressed('respawn'):
 		set_pos(respawn_point)
+	if Input.is_action_pressed('DEV_spawn_blub'):
+		var guy = mob.instance()
+		var pos = get_pos()
+		pos.x += 10
+		pos.y -= 5
+		guy.set_pos(pos)
+		get_parent().add_child(guy)
+		
 	if is_hit:
 		hit_timer += delta
 		if hit_timer >= hit_timelimit:

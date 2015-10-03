@@ -1,83 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="14" version="1.1" version_name="Godot Engine v1.1.stable.d3b42e41b0">
-	<ext_resource path="res://player.gd" type="Script"></ext_resource>
-	<ext_resource path="res://graphics/Pkegi_walk.png" type="Texture"></ext_resource>
-	<ext_resource path="res://sfx/footstep.wav" type="Sample"></ext_resource>
-	<ext_resource path="res://sfx/pkjump.wav" type="Sample"></ext_resource>
-	<ext_resource path="res://sfx/pkland.wav" type="Sample"></ext_resource>
-	<ext_resource path="res://sfx/toss.wav" type="Sample"></ext_resource>
-	<resource type="RayShape2D" path="local://1">
+<resource_file type="PackedScene" subresource_count="6" version="1.1" version_name="Godot Engine v1.1.stable.d3b42e41b0">
+	<ext_resource path="res://brub.gd" type="Script"></ext_resource>
+	<ext_resource path="res://graphics/brub_bounce.png" type="Texture"></ext_resource>
+	<resource type="CircleShape2D" path="local://1">
+		<real name="custom_solver_bias"> 0 </real>
+		<real name="radius"> 10 </real>
+
+	</resource>
+	<resource type="RayShape2D" path="local://2">
 		<real name="custom_solver_bias"> 0 </real>
 		<real name="length"> 20 </real>
 
 	</resource>
-	<resource type="ConvexPolygonShape2D" path="local://2">
-		<real name="custom_solver_bias"> 0 </real>
-		<vector2_array name="points" len="5"> 			0, 6, -4, 2, -3, -6, 3, -6, 4, 2 </vector2_array>
-
-	</resource>
 	<resource type="Animation" path="local://3">
-		<real name="length"> 0.1 </real>
-		<bool name="loop"> False </bool>
+		<real name="length"> 0.8 </real>
+		<bool name="loop"> True </bool>
 		<real name="step"> 0.1 </real>
 		<string name="tracks/0/type"> "value" </string>
-		<node_path name="tracks/0/path"> "sprite:frame" </node_path>
+		<node_path name="tracks/0/path"> "Sprite:frame" </node_path>
 		<int name="tracks/0/interp"> 1 </int>
 		<dictionary name="tracks/0/keys" shared="false">
 			<string> "cont" </string>
 			<bool> False </bool>
 			<string> "times" </string>
-			<real_array  len="2"> 				0, 0.1 </real_array>
+			<real_array  len="8"> 				0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7 </real_array>
 			<string> "transitions" </string>
-			<real_array  len="2"> 				1, 1 </real_array>
+			<real_array  len="8"> 				1, 1, 1, 1, 1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="2" shared="false">
-				<int> 0 </int>
-				<int> 0 </int>
-			</array>
-		</dictionary>
-
-	</resource>
-	<resource type="Animation" path="local://4">
-		<real name="length"> 0.4 </real>
-		<bool name="loop"> True </bool>
-		<real name="step"> 0.1 </real>
-		<string name="tracks/0/type"> "value" </string>
-		<node_path name="tracks/0/path"> "sprite:frame" </node_path>
-		<int name="tracks/0/interp"> 1 </int>
-		<dictionary name="tracks/0/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "times" </string>
-			<real_array  len="4"> 				0, 0.2, 0.3, 0.4 </real_array>
-			<string> "transitions" </string>
-			<real_array  len="4"> 				1, 1, 1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="4" shared="false">
-				<int> 1 </int>
-				<int> 2 </int>
-				<int> 4 </int>
-				<int> 7 </int>
-			</array>
-		</dictionary>
-
-	</resource>
-	<resource type="Animation" path="local://5">
-		<real name="length"> 1 </real>
-		<bool name="loop"> True </bool>
-		<real name="step"> 0.1 </real>
-		<string name="tracks/0/type"> "value" </string>
-		<node_path name="tracks/0/path"> "sprite:frame" </node_path>
-		<int name="tracks/0/interp"> 1 </int>
-		<dictionary name="tracks/0/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "times" </string>
-			<real_array  len="11"> 				0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1 </real_array>
-			<string> "transitions" </string>
-			<real_array  len="11"> 				1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="11" shared="false">
+			<array  len="8" shared="false">
 				<int> 0 </int>
 				<int> 1 </int>
 				<int> 2 </int>
@@ -86,70 +36,7 @@
 				<int> 5 </int>
 				<int> 6 </int>
 				<int> 7 </int>
-				<int> 8 </int>
-				<int> 9 </int>
-				<int> 9 </int>
 			</array>
-		</dictionary>
-
-	</resource>
-	<resource type="Animation" path="local://6">
-		<real name="length"> 0.4 </real>
-		<bool name="loop"> True </bool>
-		<real name="step"> 0.1 </real>
-		<string name="tracks/0/type"> "value" </string>
-		<node_path name="tracks/0/path"> "sprite:frame" </node_path>
-		<int name="tracks/0/interp"> 1 </int>
-		<dictionary name="tracks/0/keys" shared="false">
-			<string> "cont" </string>
-			<bool> False </bool>
-			<string> "times" </string>
-			<real_array  len="5"> 				0, 0.1, 0.2, 0.3, 0.4 </real_array>
-			<string> "transitions" </string>
-			<real_array  len="5"> 				1, 1, 1, 1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="5" shared="false">
-				<int> 2 </int>
-				<int> 3 </int>
-				<int> 4 </int>
-				<int> 3 </int>
-				<int> 3 </int>
-			</array>
-		</dictionary>
-
-	</resource>
-	<resource type="SampleLibrary" path="local://7">
-		<dictionary name="samples/jump" shared="false">
-			<string> "db" </string>
-			<real> -1 </real>
-			<string> "pitch" </string>
-			<real> 1.4 </real>
-			<string> "sample" </string>
-			<resource  resource_type="Sample" path="res://sfx/pkjump.wav">  </resource>
-		</dictionary>
-		<dictionary name="samples/footstep" shared="false">
-			<string> "db" </string>
-			<real> 20 </real>
-			<string> "pitch" </string>
-			<real> 0.7 </real>
-			<string> "sample" </string>
-			<resource  resource_type="Sample" path="res://sfx/footstep.wav">  </resource>
-		</dictionary>
-		<dictionary name="samples/land" shared="false">
-			<string> "db" </string>
-			<real> 0 </real>
-			<string> "pitch" </string>
-			<real> 0.4 </real>
-			<string> "sample" </string>
-			<resource  resource_type="Sample" path="res://sfx/pkland.wav">  </resource>
-		</dictionary>
-		<dictionary name="samples/toss" shared="false">
-			<string> "db" </string>
-			<real> 0 </real>
-			<string> "pitch" </string>
-			<real> 1 </real>
-			<string> "sample" </string>
-			<resource  resource_type="Sample" path="res://sfx/toss.wav">  </resource>
 		</dictionary>
 
 	</resource>
@@ -160,8 +47,8 @@
 			<string> "conns" </string>
 			<int_array  len="0"> 				 </int_array>
 			<string> "names" </string>
-			<string_array  len="96">
-				<string> "Toon" </string>
+			<string_array  len="66">
+				<string> "Blub" </string>
 				<string> "RigidBody2D" </string>
 				<string> "_import_path" </string>
 				<string> "visibility/visible" </string>
@@ -200,7 +87,6 @@
 				<string> "damp_override/angular" </string>
 				<string> "script/script" </string>
 				<string> "__meta__" </string>
-				<string> "sprite" </string>
 				<string> "Sprite" </string>
 				<string> "texture" </string>
 				<string> "centered" </string>
@@ -218,52 +104,23 @@
 				<string> "playback/process_mode" </string>
 				<string> "playback/default_blend_time" </string>
 				<string> "root/root" </string>
-				<string> "anims/idle" </string>
-				<string> "anims/jumping" </string>
-				<string> "anims/running" </string>
-				<string> "anims/falling" </string>
+				<string> "anims/bounce" </string>
 				<string> "playback/active" </string>
 				<string> "playback/speed" </string>
 				<string> "blend_times" </string>
 				<string> "autoplay" </string>
-				<string> "Camera2D" </string>
-				<string> "rotating" </string>
-				<string> "current" </string>
-				<string> "smoothing" </string>
-				<string> "zoom" </string>
-				<string> "limit/left" </string>
-				<string> "limit/top" </string>
-				<string> "limit/right" </string>
-				<string> "limit/bottom" </string>
-				<string> "drag_margin/h_enabled" </string>
-				<string> "drag_margin/v_enabled" </string>
-				<string> "drag_margin/left" </string>
-				<string> "drag_margin/top" </string>
-				<string> "drag_margin/right" </string>
-				<string> "drag_margin/bottom" </string>
+				<string> "collider" </string>
 				<string> "CollisionShape2D" </string>
 				<string> "shape" </string>
 				<string> "trigger" </string>
-				<string> "CollisionPolygon2D" </string>
-				<string> "build_mode" </string>
-				<string> "polygon" </string>
-				<string> "sound" </string>
-				<string> "SamplePlayer2D" </string>
-				<string> "params/volume_db" </string>
-				<string> "params/pitch_scale" </string>
-				<string> "params/attenuation/min_distance" </string>
-				<string> "params/attenuation/max_distance" </string>
-				<string> "params/attenuation/distance_exp" </string>
-				<string> "config/polyphony" </string>
-				<string> "config/samples" </string>
-				<string> "config/pitch_random" </string>
+				<string> "floor_detect" </string>
 			</string_array>
 			<string> "node_count" </string>
-			<int> 7 </int>
+			<int> 5 </int>
 			<string> "nodes" </string>
-			<int_array  len="325"> 				-1, -1, 1, 0, -1, 37, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 12, 8, 13, 9, 14, 10, 15, 11, 16, 8, 17, 12, 18, 13, 19, 8, 20, 3, 21, 3, 22, 9, 23, 2, 24, 5, 25, 5, 26, 2, 27, 1, 28, 9, 29, 14, 30, 8, 31, 8, 32, 1, 33, 4, 34, 5, 35, 15, 36, 15, 37, 16, 38, 17, 0, 0, 0, 40, 39, -1, 21, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 41, 18, 42, 1, 43, 4, 44, 8, 45, 8, 46, 3, 47, 19, 48, 9, 49, 20, 50, 8, 51, 21, 0, 0, 0, 53, 52, -1, 12, 2, 0, 54, 3, 55, 5, 56, 22, 57, 23, 58, 24, 59, 25, 60, 26, 61, 1, 62, 2, 63, 27, 64, 28, 0, 0, 0, 65, 65, -1, 25, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 29, 8, 5, 9, 6, 10, 7, 11, 1, 42, 1, 66, 8, 67, 1, 68, 30, 69, 6, 70, 7, 71, 7, 72, 31, 73, 32, 74, 1, 75, 1, 76, 33, 77, 34, 78, 33, 79, 34, 0, 0, 0, 80, 80, -1, 12, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 35, 8, 5, 9, 36, 10, 7, 11, 1, 81, 10, 82, 8, 0, 0, 0, 83, 83, -1, 13, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 84, 7, 85, 37, 82, 8, 0, 0, 0, 87, 86, -1, 18, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 38, 8, 5, 9, 6, 10, 7, 11, 1, 88, 5, 89, 2, 90, 2, 91, 39, 92, 2, 93, 3, 94, 40, 95, 5, 0 </int_array>
+			<int_array  len="217"> 				-1, -1, 1, 0, -1, 37, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 12, 8, 13, 9, 14, 10, 15, 11, 16, 8, 17, 12, 18, 13, 19, 8, 20, 9, 21, 3, 22, 9, 23, 14, 24, 2, 25, 5, 26, 2, 27, 1, 28, 7, 29, 15, 30, 1, 31, 8, 32, 1, 33, 4, 34, 5, 35, 16, 36, 16, 37, 17, 38, 18, 0, 0, 0, 39, 39, -1, 21, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 40, 19, 41, 1, 42, 4, 43, 8, 44, 8, 45, 3, 46, 20, 47, 7, 48, 21, 49, 8, 50, 22, 0, 0, 0, 52, 51, -1, 9, 2, 0, 53, 3, 54, 5, 55, 23, 56, 24, 57, 1, 58, 2, 59, 25, 60, 26, 0, 0, 0, 62, 61, -1, 12, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 27, 8, 5, 9, 28, 10, 7, 11, 1, 63, 10, 64, 8, 0, 0, 0, 62, 65, -1, 12, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 29, 8, 5, 9, 30, 10, 7, 11, 1, 63, 12, 64, 8, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="41" shared="false">
+			<array  len="31" shared="false">
 				<node_path> "" </node_path>
 				<bool> True </bool>
 				<real> 1 </real>
@@ -275,21 +132,22 @@
 				<bool> False </bool>
 				<int> 2 </int>
 				<resource  resource_type="Shape2D" path="local://1">  </resource>
-				<matrix32> 0.332624, -0, 0, 0.379075, 0, -1.79075 </matrix32>
+				<matrix32> 0.423077, -0, 0, 0.384615, 0.5, 3 </matrix32>
 				<resource  resource_type="Shape2D" path="local://2">  </resource>
-				<matrix32> 1, -0, 0, 1, 0, 0 </matrix32>
+				<matrix32> 0.428964, -0, 0, 0.347485, 0.5, 0.0251452 </matrix32>
+				<real> 0.5 </real>
 				<int> 3 </int>
 				<real> -1 </real>
-				<resource  resource_type="Script" path="res://player.gd">  </resource>
+				<resource  resource_type="Script" path="res://brub.gd">  </resource>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_screen__" </string>
-					<string> "Script" </string>
+					<string> "2D" </string>
 					<string> "__editor_plugin_states__" </string>
 					<dictionary  shared="false">
 						<string> "2D" </string>
 						<dictionary  shared="false">
 							<string> "ofs" </string>
-							<vector2> -135.115, -83.6915 </vector2>
+							<vector2> -50.4006, -26.6285 </vector2>
 							<string> "snap_grid" </string>
 							<bool> True </bool>
 							<string> "snap_offset" </string>
@@ -309,7 +167,7 @@
 							<string> "snap_step" </string>
 							<vector2> 1, 1 </vector2>
 							<string> "zoom" </string>
-							<real> 4.658988 </real>
+							<real> 9.317981 </real>
 						</dictionary>
 						<string> "3D" </string>
 						<dictionary  shared="false">
@@ -406,12 +264,12 @@
 						<string> "Script" </string>
 						<dictionary  shared="false">
 							<string> "current" </string>
-							<int> 2 </int>
+							<int> 0 </int>
 							<string> "sources" </string>
 							<array  len="3" shared="false">
-								<string> "res://player.gd" </string>
-								<string> "res://spear.gd" </string>
 								<string> "res://brub.gd" </string>
+								<string> "res://spear.gd" </string>
+								<string> "res://player.gd" </string>
 							</array>
 						</dictionary>
 					</dictionary>
@@ -423,30 +281,19 @@
 						<int> 0 </int>
 					</dictionary>
 				</dictionary>
-				<resource  resource_type="Texture" path="res://graphics/Pkegi_walk.png">  </resource>
-				<int> 10 </int>
+				<resource  resource_type="Texture" path="res://graphics/brub_bounce.png">  </resource>
+				<int> 8 </int>
 				<color> 1, 1, 1, 1 </color>
 				<rect2> 0, 0, 0, 0 </rect2>
 				<node_path> ".." </node_path>
 				<resource  resource_type="Animation" path="local://3">  </resource>
-				<resource  resource_type="Animation" path="local://4">  </resource>
-				<resource  resource_type="Animation" path="local://5">  </resource>
-				<resource  resource_type="Animation" path="local://6">  </resource>
 				<array  len="0" shared="false">
 				</array>
-				<string> "running" </string>
-				<vector2> 0, 2 </vector2>
-				<real> 5 </real>
-				<int> 1600 </int>
-				<int> 112 </int>
-				<real> 0.2 </real>
-				<real> 0.8 </real>
-				<vector2> 0, -1.79075 </vector2>
-				<vector2> 0.332624, 0.379075 </vector2>
-				<vector2_array  len="5"> 					3, -6, -3, -6, -4, 2, 0, 6, 4, 2 </vector2_array>
-				<vector2> 0, -2 </vector2>
-				<real> 2048 </real>
-				<resource  resource_type="SampleLibrary" path="local://7">  </resource>
+				<string> "bounce" </string>
+				<vector2> 0.5, 3 </vector2>
+				<vector2> 0.423077, 0.384615 </vector2>
+				<vector2> 0.5, 0.0251452 </vector2>
+				<vector2> 0.428964, 0.347485 </vector2>
 			</array>
 			<string> "version" </string>
 			<int> 1 </int>

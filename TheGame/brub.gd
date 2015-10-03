@@ -19,6 +19,7 @@ var POINT_VALUE = 100
 var spear_class = preload('res://spear.gd')
 var player_class = preload('res://player.gd')
 
+
 func _die():
 	get_node('/root/globals').SCORE += POINT_VALUE
 	get_node('/root/Root/BG/score/ScoreValue')._activate()
@@ -36,7 +37,7 @@ func _integrate_forces(state):
 
 	if( bounce_timer <= 0 and first_land):
 		var face = -1.0
-		var player_x = get_node('../../Toon').get_pos().x
+		var player_x = get_node('/root/Root/Toon').get_pos().x
 	
 		var my_x = get_pos().x
 		if(player_x > my_x):
@@ -62,8 +63,8 @@ func _integrate_forces(state):
 				col.call('done')
 				is_hit=true
 				break
-			elif (col extends player_class and not is_hit):
-				get_node('../../Toon').get_hit(self)
+			elif (col == get_node('/root/Root/Toon') and not is_hit):
+				get_node('/root/Root/Toon').get_hit(self)
 	if (is_hit):
 		hit_timer += 1
 		if(hit_timer >= 20):
