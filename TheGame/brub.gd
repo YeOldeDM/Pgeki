@@ -21,6 +21,7 @@ var player_class = preload('res://player.gd')
 
 func _die():
 	get_node('/root/globals').SCORE += POINT_VALUE
+	get_node('/root/Root/BG/score/ScoreValue')._activate()
 	queue_free()
 
 func _integrate_forces(state):

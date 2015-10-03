@@ -8,15 +8,11 @@ extends Label
 var my_score=0
 var real_score=0
 
+var is_active=false
 
-	
-func _ready():
-	set_process(true)
-	
-
-func _process(delta):
+func _draw_score(delta):
 	real_score = get_node('/root/globals').SCORE
-	
+	print(real_score)
 	if (int(my_score)!=real_score):
 		if(my_score < real_score):
 			my_score += delta*100
@@ -24,8 +20,21 @@ func _process(delta):
 			my_score -= delta*100
 	else:
 		my_score = real_score
+		is_active=false
 	var int_score = int(my_score) 
 	set_text(str(int_score))
+func _ready():
+	set_process(true)
+	
+
+func _process(delta):
+	if is_active:
+		_draw_score(delta)
+	else:
+		pass
 	#print(my_score)
+
+func _activate():
+	is_active=true
 
 
