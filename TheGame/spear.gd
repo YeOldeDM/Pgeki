@@ -1,50 +1,66 @@
 
 extends RigidBody2D
 
-# member variables here, example:
-# var a=2
-# var b="textvar"
-
-
-var lifetime = -1
-var TIME_LIMIT = 60
-var hold_timer=0
+# Parameters
+var TIME_LIMIT = 60	#Spear Lifetime (if not view-culled), in frames
 var THROW_ATK=13	#frames before throwing
+
+# Switches
 var pre_throw=true
 var did_hit=false
 var blinker=true
+
+# Holders
+var lifetime = -1
+
+# Timers
+var hold_timer=0
 var blink_timer=0
 
+
+#  CUSTOM PHYSICS INTEGRATION  #
+################################
 func _integrate_forces(state):
+	# Handle Collision
 	for i in range(state.get_contact_count()):
 		var c = state.get_contact_collider_object(i)
 		
-		if (c):
-			set_mode(MODE_STATIC)
-			lifetime += 1
-			if (not did_hit):
+		if (c):	#Contact!
+			set_mode(MODE_STATIC)	#Stick to the collider
+			lifetime += 1			#increase lifetime from -1 (causing it to start the timer)
+			if (not did_hit):		#switch: we hit
 				did_hit = true
-				get_node('sound').play('hit')
+				get_node('sound').play('hit')	#Thud!
 
 func _ready():
+	# Initialize!
 	set_process(true)
-	
+
+
+
 func _process(delta):
+	#Holder for screen visibility
 	var visible = get_node('visibility').is_on_screen() == true
 
-	
 	if (not visible):
-		done()
-	elif(lifetime>=0):
-		lifetime += 1
+		done()	#we have gone off-screen. We are done.
+		
+	elif(lifetime>=0):	#if not -1:
+		lifetime += 1	#increase the timer
+		
 		if(lifetime>=TIME_LIMIT):
-			done()
-		if(lifetime >= TIME_LIMIT*0.65):	
+			done()	#our timelimit is up. We are done.
+			
+		if(lifetime >= TIME_LIMIT*0.65):	#Start blinking 65% into our life time
 			blink()
-func done():
+
+
+func done():	#Tell the player he can shoot again, then kill ourselves
 	get_node('/root/Root/Toon').call('done_shooting')
 	queue_free()
 
+# Hackity blink logic
+# This should become modular, for any object that blinks
 func blink():
 	if(blinker):
 		blink_timer += 1
