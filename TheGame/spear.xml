@@ -109,11 +109,11 @@
 				<int> 0 </int>
 				<bool> False </bool>
 				<resource  resource_type="Shape2D" path="local://1">  </resource>
-				<matrix32> -7.22475e-09, -0.165283, 0.193029, -8.43758e-09, -1.80292, 0.510886 </matrix32>
+				<matrix32> -7.22475e-09, -0.165283, 0.235595, -1.02982e-08, -1.55485, 0.510886 </matrix32>
 				<int> 2 </int>
 				<real> 5 </real>
 				<real> 2 </real>
-				<int> 3 </int>
+				<int> 6 </int>
 				<real> -1 </real>
 				<resource  resource_type="Script" path="res://spear.gd">  </resource>
 				<dictionary  shared="false">
@@ -265,9 +265,9 @@
 					<string> "_edit_group_" </string>
 					<bool> True </bool>
 				</dictionary>
-				<vector2> -1.80292, 0.510886 </vector2>
+				<vector2> -1.55485, 0.510886 </vector2>
 				<real> 90 </real>
-				<vector2> 0.165283, 0.193029 </vector2>
+				<vector2> 0.165283, 0.235595 </vector2>
 				<dictionary  shared="false">
 					<string> "_edit_group_" </string>
 					<bool> True </bool>

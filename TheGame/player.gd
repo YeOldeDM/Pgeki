@@ -7,7 +7,7 @@ extends RigidBody2D
 #########################################
 
 # Mob Spawner #
-var mob = preload('res://brub.xml')
+var mob = preload('res://blub.xml')
 
 # Spear preload #
 var spear = preload('res://spear.xml')
@@ -35,7 +35,7 @@ var WALK_ATK = 320.0
 var WALK_DEC = 420.0
 var WALK_MAX_SPEED = 64.0
 var AIR_ATK = 120.0
-var AIR_DEC = 120.0
+var AIR_DEC = 20.0
 var JUMP_VELOCITY = 1.4
 var MAX_AIR_SPEED = 68.0
 var STOP_JUMP_FORCE = 900.0
