@@ -15,6 +15,7 @@ var spear = preload('res://spear.xml')
 # Character States #
 var animation = ''
 var facing = 1
+var scale = 4
 
 # State Switches #
 var is_jumping = false
@@ -30,19 +31,20 @@ var hit_timelimit=3.0
 
 
 # Movement Variables #
-var WALK_ATK = 300.0
-var WALK_DEC = 300.0
-var WALK_MAX_SPEED = 60.0
-var AIR_ATK = 150.0
-var AIR_DEC = 75.0
-var JUMP_VELOCITY = 130
-var STOP_JUMP_FORCE = 900.0
+var WALK_ATK = 1200.0
+var WALK_DEC = 1200.0
+var WALK_MAX_SPEED = 260.0
+var AIR_ATK = 450.0
+var AIR_DEC = 1200.0
+var JUMP_VELOCITY = 500.0
+var MAX_AIR_SPEED = 550.0
+var STOP_JUMP_FORCE = 1900.0
 var MAX_FLOOR_AIRBORNE_TIME = 0.15
 var airborne_time = 1e20
 var floor_h_velocity = 0.0
 
-var SPEAR_SPEED = 325.0
-var SPEAR_DROP = -35
+var SPEAR_SPEED = 2250.0
+var SPEAR_DROP = -160.0
 
 var respawn_point = Vector2(100,50)
 
@@ -203,7 +205,12 @@ func _integrate_forces(state):
 			if (xv<0):
 				xv=0
 			lv.x=sign(lv.x)*xv
-		
+			
+		if lv.x < -MAX_AIR_SPEED:
+			lv.x = -MAX_AIR_SPEED
+		elif lv.x > MAX_AIR_SPEED:
+			lv.x = MAX_AIR_SPEED
+			
 		# Set Animation
 		if(lv.y<0):
 			new_animation='jumping'
@@ -212,7 +219,7 @@ func _integrate_forces(state):
 			
 	#Update sprite scale to reflect new facing
 	if(new_facing!=facing):
-		var sc = Vector2(-facing,1)
+		var sc = Vector2(-facing,1)*scale
 		get_node('sprite').set_scale(sc)
 
 		facing = new_facing
