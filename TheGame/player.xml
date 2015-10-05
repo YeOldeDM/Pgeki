@@ -13,7 +13,7 @@
 	</resource>
 	<resource type="ConvexPolygonShape2D" path="local://2">
 		<real name="custom_solver_bias"> 0 </real>
-		<vector2_array name="points" len="6"> 			16, -28, 16, 12, 8, 20, -4, 20, -12, 12, -12, -28 </vector2_array>
+		<vector2_array name="points" len="5"> 			4, -6, 4, 4, 0, 6, -4, 4, -4, -6 </vector2_array>
 
 	</resource>
 	<resource type="Animation" path="local://3">
@@ -39,6 +39,55 @@
 
 	</resource>
 	<resource type="Animation" path="local://4">
+		<real name="length"> 0.4 </real>
+		<bool name="loop"> True </bool>
+		<real name="step"> 0.1 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> "sprite:frame" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "cont" </string>
+			<bool> False </bool>
+			<string> "times" </string>
+			<real_array  len="5"> 				0, 0.1, 0.2, 0.3, 0.4 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="5"> 				1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="5" shared="false">
+				<int> 2 </int>
+				<int> 3 </int>
+				<int> 4 </int>
+				<int> 3 </int>
+				<int> 3 </int>
+			</array>
+		</dictionary>
+
+	</resource>
+	<resource type="Animation" path="local://5">
+		<real name="length"> 0.4 </real>
+		<bool name="loop"> True </bool>
+		<real name="step"> 0.1 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> "sprite:frame" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="4"> 				0, 0.2, 0.3, 0.4 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="4"> 				1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="4" shared="false">
+				<int> 1 </int>
+				<int> 2 </int>
+				<int> 4 </int>
+				<int> 7 </int>
+			</array>
+		</dictionary>
+
+	</resource>
+	<resource type="Animation" path="local://6">
 		<real name="length"> 1 </real>
 		<bool name="loop"> True </bool>
 		<real name="step"> 0.1 </real>
@@ -69,55 +118,6 @@
 		</dictionary>
 
 	</resource>
-	<resource type="Animation" path="local://5">
-		<real name="length"> 0.4 </real>
-		<bool name="loop"> True </bool>
-		<real name="step"> 0.1 </real>
-		<string name="tracks/0/type"> "value" </string>
-		<node_path name="tracks/0/path"> "sprite:frame" </node_path>
-		<int name="tracks/0/interp"> 1 </int>
-		<dictionary name="tracks/0/keys" shared="false">
-			<string> "cont" </string>
-			<bool> False </bool>
-			<string> "times" </string>
-			<real_array  len="5"> 				0, 0.1, 0.2, 0.3, 0.4 </real_array>
-			<string> "transitions" </string>
-			<real_array  len="5"> 				1, 1, 1, 1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="5" shared="false">
-				<int> 2 </int>
-				<int> 3 </int>
-				<int> 4 </int>
-				<int> 3 </int>
-				<int> 3 </int>
-			</array>
-		</dictionary>
-
-	</resource>
-	<resource type="Animation" path="local://6">
-		<real name="length"> 0.4 </real>
-		<bool name="loop"> True </bool>
-		<real name="step"> 0.1 </real>
-		<string name="tracks/0/type"> "value" </string>
-		<node_path name="tracks/0/path"> "sprite:frame" </node_path>
-		<int name="tracks/0/interp"> 1 </int>
-		<dictionary name="tracks/0/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
-			<string> "times" </string>
-			<real_array  len="4"> 				0, 0.2, 0.3, 0.4 </real_array>
-			<string> "transitions" </string>
-			<real_array  len="4"> 				1, 1, 1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="4" shared="false">
-				<int> 1 </int>
-				<int> 2 </int>
-				<int> 4 </int>
-				<int> 7 </int>
-			</array>
-		</dictionary>
-
-	</resource>
 	<resource type="SampleLibrary" path="local://7">
 		<dictionary name="samples/jump" shared="false">
 			<string> "db" </string>
@@ -135,14 +135,6 @@
 			<string> "sample" </string>
 			<resource  resource_type="Sample" path="res://sfx/footstep.wav">  </resource>
 		</dictionary>
-		<dictionary name="samples/toss" shared="false">
-			<string> "db" </string>
-			<real> 0 </real>
-			<string> "pitch" </string>
-			<real> 1 </real>
-			<string> "sample" </string>
-			<resource  resource_type="Sample" path="res://sfx/toss.wav">  </resource>
-		</dictionary>
 		<dictionary name="samples/land" shared="false">
 			<string> "db" </string>
 			<real> 0 </real>
@@ -150,6 +142,14 @@
 			<real> 0.4 </real>
 			<string> "sample" </string>
 			<resource  resource_type="Sample" path="res://sfx/pkland.wav">  </resource>
+		</dictionary>
+		<dictionary name="samples/toss" shared="false">
+			<string> "db" </string>
+			<real> 0 </real>
+			<string> "pitch" </string>
+			<real> 1 </real>
+			<string> "sample" </string>
+			<resource  resource_type="Sample" path="res://sfx/toss.wav">  </resource>
 		</dictionary>
 
 	</resource>
@@ -219,9 +219,9 @@
 				<string> "playback/default_blend_time" </string>
 				<string> "root/root" </string>
 				<string> "anims/idle" </string>
-				<string> "anims/running" </string>
 				<string> "anims/falling" </string>
 				<string> "anims/jumping" </string>
+				<string> "anims/running" </string>
 				<string> "playback/active" </string>
 				<string> "playback/speed" </string>
 				<string> "blend_times" </string>
@@ -261,9 +261,9 @@
 			<string> "node_count" </string>
 			<int> 7 </int>
 			<string> "nodes" </string>
-			<int_array  len="331"> 				-1, -1, 1, 0, -1, 37, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 12, 8, 13, 9, 14, 10, 15, 11, 16, 8, 17, 12, 18, 13, 19, 8, 20, 3, 21, 3, 22, 9, 23, 14, 24, 5, 25, 5, 26, 15, 27, 1, 28, 7, 29, 16, 30, 8, 31, 8, 32, 1, 33, 4, 34, 5, 35, 17, 36, 17, 37, 18, 38, 19, 0, 0, 0, 40, 39, -1, 22, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 20, 10, 7, 11, 1, 41, 21, 42, 1, 43, 4, 44, 8, 45, 8, 46, 3, 47, 22, 48, 9, 49, 23, 50, 8, 51, 24, 38, 25, 0, 0, 0, 53, 52, -1, 12, 2, 0, 54, 3, 55, 5, 56, 26, 57, 27, 58, 28, 59, 29, 60, 30, 61, 1, 62, 31, 63, 32, 64, 33, 0, 0, 0, 65, 65, -1, 26, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 34, 8, 5, 9, 6, 10, 7, 11, 1, 42, 1, 66, 8, 67, 1, 68, 35, 69, 6, 70, 7, 71, 7, 72, 36, 73, 37, 74, 1, 75, 1, 76, 38, 77, 39, 78, 38, 79, 39, 38, 40, 0, 0, 0, 80, 80, -1, 12, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 41, 8, 5, 9, 42, 10, 7, 11, 1, 81, 10, 82, 8, 0, 0, 0, 84, 83, -1, 19, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 43, 8, 5, 9, 6, 10, 7, 11, 1, 85, 5, 86, 2, 87, 2, 88, 44, 89, 2, 90, 3, 91, 45, 92, 5, 38, 46, 0, 0, 0, 93, 93, -1, 13, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 94, 7, 95, 47, 82, 8, 0 </int_array>
+			<int_array  len="331"> 				-1, -1, 1, 0, -1, 37, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 12, 8, 13, 9, 14, 10, 15, 11, 16, 8, 17, 12, 18, 13, 19, 8, 20, 3, 21, 3, 22, 9, 23, 14, 24, 5, 25, 5, 26, 2, 27, 1, 28, 9, 29, 15, 30, 8, 31, 8, 32, 1, 33, 4, 34, 5, 35, 16, 36, 16, 37, 17, 38, 18, 0, 0, 0, 40, 39, -1, 22, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 41, 19, 42, 1, 43, 4, 44, 8, 45, 8, 46, 3, 47, 20, 48, 9, 49, 21, 50, 8, 51, 22, 38, 23, 0, 0, 0, 53, 52, -1, 12, 2, 0, 54, 3, 55, 5, 56, 24, 57, 25, 58, 26, 59, 27, 60, 28, 61, 1, 62, 29, 63, 30, 64, 31, 0, 0, 0, 65, 65, -1, 26, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 32, 8, 5, 9, 6, 10, 7, 11, 1, 42, 1, 66, 8, 67, 1, 68, 33, 69, 6, 70, 7, 71, 34, 72, 35, 73, 36, 74, 1, 75, 1, 76, 37, 77, 38, 78, 37, 79, 38, 38, 39, 0, 0, 0, 80, 80, -1, 12, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 40, 8, 5, 9, 41, 10, 7, 11, 1, 81, 10, 82, 8, 0, 0, 0, 84, 83, -1, 19, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 42, 8, 5, 9, 6, 10, 7, 11, 1, 85, 5, 86, 2, 87, 2, 88, 43, 89, 2, 90, 3, 91, 44, 92, 5, 38, 45, 0, 0, 0, 93, 93, -1, 13, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 94, 7, 95, 46, 82, 8, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="48" shared="false">
+			<array  len="47" shared="false">
 				<node_path> "" </node_path>
 				<bool> True </bool>
 				<real> 1 </real>
@@ -275,11 +275,10 @@
 				<bool> False </bool>
 				<int> 2 </int>
 				<resource  resource_type="Shape2D" path="local://1">  </resource>
-				<matrix32> 2.05903, -0, 0, 2.14809, 2.74629e-05, -19.4809 </matrix32>
+				<matrix32> 1.37268, -0, 0, 0.631791, 0, -6.31792 </matrix32>
 				<resource  resource_type="Shape2D" path="local://2">  </resource>
-				<matrix32> 1, 0, 0, 1, 0, 0 </matrix32>
+				<matrix32> 1, -0, 0, 1, 0, 0 </matrix32>
 				<real> 100 </real>
-				<real> 4 </real>
 				<int> 3 </int>
 				<real> -1 </real>
 				<resource  resource_type="Script" path="res://player.gd">  </resource>
@@ -291,7 +290,7 @@
 						<string> "2D" </string>
 						<dictionary  shared="false">
 							<string> "ofs" </string>
-							<vector2> -129.105, -81.5451 </vector2>
+							<vector2> -87.8588, -45.3417 </vector2>
 							<string> "snap_grid" </string>
 							<bool> True </bool>
 							<string> "snap_offset" </string>
@@ -309,9 +308,9 @@
 							<string> "snap_show_grid" </string>
 							<bool> True </bool>
 							<string> "snap_step" </string>
-							<vector2> 4, 4 </vector2>
+							<vector2> 2, 2 </vector2>
 							<string> "zoom" </string>
-							<real> 4.658988 </real>
+							<real> 7.78136 </real>
 						</dictionary>
 						<string> "3D" </string>
 						<dictionary  shared="false">
@@ -425,7 +424,6 @@
 						<int> 0 </int>
 					</dictionary>
 				</dictionary>
-				<vector2> 4, 4 </vector2>
 				<resource  resource_type="Texture" path="res://graphics/Pkegi_walk.png">  </resource>
 				<int> 10 </int>
 				<color> 1, 1, 1, 1 </color>
@@ -445,7 +443,8 @@
 				<string> "running" </string>
 				<vector2> 0, 2 </vector2>
 				<real> 5 </real>
-				<int> 1600 </int>
+				<int> -112 </int>
+				<int> 5000 </int>
 				<int> 112 </int>
 				<real> 0.2 </real>
 				<real> 0.8 </real>
@@ -453,8 +452,8 @@
 					<string> "_edit_lock_" </string>
 					<bool> True </bool>
 				</dictionary>
-				<vector2> 2.74629e-05, -19.4809 </vector2>
-				<vector2> 2.05903, 2.14809 </vector2>
+				<vector2> 0, -6.31792 </vector2>
+				<vector2> 1.37268, 0.631791 </vector2>
 				<vector2> 0, -2 </vector2>
 				<real> 2048 </real>
 				<resource  resource_type="SampleLibrary" path="local://7">  </resource>
@@ -462,7 +461,7 @@
 					<string> "_edit_lock_" </string>
 					<bool> True </bool>
 				</dictionary>
-				<vector2_array  len="6"> 					16, -28, -12, -28, -12, 12, -4, 20, 8, 20, 16, 12 </vector2_array>
+				<vector2_array  len="5"> 					4, -6, -4, -6, -4, 4, 0, 6, 4, 4 </vector2_array>
 			</array>
 			<string> "version" </string>
 			<int> 1 </int>

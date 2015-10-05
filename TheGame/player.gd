@@ -15,7 +15,7 @@ var spear = preload('res://spear.xml')
 # Character States #
 var animation = ''
 var facing = 1
-var scale = 4
+var scale = 1
 
 # State Switches #
 var is_jumping = false
@@ -31,14 +31,14 @@ var hit_timelimit=3.0
 
 
 # Movement Variables #
-var WALK_ATK = 1200.0
-var WALK_DEC = 1200.0
-var WALK_MAX_SPEED = 260.0
-var AIR_ATK = 450.0
-var AIR_DEC = 1200.0
-var JUMP_VELOCITY = 500.0
-var MAX_AIR_SPEED = 550.0
-var STOP_JUMP_FORCE = 1900.0
+var WALK_ATK = 320.0
+var WALK_DEC = 420.0
+var WALK_MAX_SPEED = 64.0
+var AIR_ATK = 120.0
+var AIR_DEC = 120.0
+var JUMP_VELOCITY = 1.4
+var MAX_AIR_SPEED = 68.0
+var STOP_JUMP_FORCE = 900.0
 var MAX_FLOOR_AIRBORNE_TIME = 0.15
 var airborne_time = 1e20
 var floor_h_velocity = 0.0
@@ -162,7 +162,7 @@ func _integrate_forces(state):
 		
 		# Trigger Jump
 		if (not is_jumping and not did_jump and jump):
-			lv.y=-JUMP_VELOCITY				#Apply velocity
+			lv.y=-JUMP_VELOCITY * get_mass()				#Apply velocity
 			is_jumping=true					#switch: we are jumping
 			stopping_jump=false				#switch: we are not stop-jumping
 			did_jump = true					#switch: we did jump (and cannot again until we release the command)
