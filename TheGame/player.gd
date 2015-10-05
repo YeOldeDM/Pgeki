@@ -43,8 +43,8 @@ var MAX_FLOOR_AIRBORNE_TIME = 0.15
 var airborne_time = 1e20
 var floor_h_velocity = 0.0
 
-var SPEAR_SPEED = 2250.0
-var SPEAR_DROP = -160.0
+var SPEAR_SPEED = 450.0
+var SPEAR_DROP = -40.0
 
 var respawn_point = Vector2(100,50)
 

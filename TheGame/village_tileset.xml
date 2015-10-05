@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="TileSet" subresource_count="3" version="1.1" version_name="Godot Engine v1.1.stable.d3b42e41b0">
 	<ext_resource path="res://graphics/VILLAGE_TILES.png" type="Texture"></ext_resource>
-	<resource type="ConcavePolygonShape2D" path="local://1">
+	<resource type="ConvexPolygonShape2D" path="local://1">
 		<real name="custom_solver_bias"> 0 </real>
-		<vector2_array name="segments" len="8"> 			11.6, 4.6, 3.6, 4.6, 3.6, 4.6, 3.6, 12.6, 3.6, 12.6, 11.6, 12.6, 11.6, 12.6, 11.6, 4.6 </vector2_array>
+		<vector2_array name="points" len="4"> 			11.6, 4.6, 11.6, 12.6, 3.6, 12.6, 3.6, 4.6 </vector2_array>
 
 	</resource>
 	<main_resource>

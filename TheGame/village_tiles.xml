@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="3" version="1.1" version_name="Godot Engine v1.1.stable.d3b42e41b0">
 	<ext_resource path="res://graphics/VILLAGE_TILES.png" type="Texture"></ext_resource>
-	<resource type="ConcavePolygonShape2D" path="local://1">
+	<resource type="ConvexPolygonShape2D" path="local://1">
 		<real name="custom_solver_bias"> 0 </real>
-		<vector2_array name="segments" len="8"> 			11.6, 4.6, 3.6, 4.6, 3.6, 4.6, 3.6, 12.6, 3.6, 12.6, 11.6, 12.6, 11.6, 12.6, 11.6, 4.6 </vector2_array>
+		<vector2_array name="points" len="4"> 			11.6, 4.6, 11.6, 12.6, 3.6, 12.6, 3.6, 4.6 </vector2_array>
 
 	</resource>
 	<main_resource>
@@ -58,7 +58,7 @@
 			<string> "node_count" </string>
 			<int> 4 </int>
 			<string> "nodes" </string>
-			<int_array  len="142"> 				-1, -1, 0, 0, -1, 2, 1, 0, 2, 1, 0, 0, 0, 3, 3, -1, 21, 1, 0, 4, 2, 5, 3, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 8, 12, 2, 13, 9, 14, 10, 15, 5, 16, 10, 17, 10, 18, 4, 19, 4, 20, 8, 21, 11, 22, 2, 23, 12, 0, 1, 0, 24, 24, -1, 21, 1, 0, 4, 2, 5, 3, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 8, 12, 2, 25, 10, 26, 4, 27, 13, 28, 14, 29, 10, 30, 4, 31, 4, 32, 5, 33, 6, 34, 3, 35, 6, 0, 2, 0, 36, 36, -1, 13, 1, 0, 4, 2, 5, 3, 6, 3, 7, 4, 8, 15, 9, 6, 10, 7, 11, 8, 12, 2, 37, 4, 38, 16, 39, 10, 0 </int_array>
+			<int_array  len="142"> 				-1, -1, 0, 0, -1, 2, 1, 0, 2, 1, 0, 0, 0, 3, 3, -1, 21, 1, 0, 4, 2, 5, 3, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 8, 12, 2, 13, 9, 14, 10, 15, 5, 16, 10, 17, 10, 18, 4, 19, 4, 20, 8, 21, 11, 22, 2, 23, 12, 0, 1, 0, 24, 24, -1, 21, 1, 0, 4, 2, 5, 3, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 8, 12, 2, 25, 10, 26, 4, 27, 13, 28, 14, 29, 10, 30, 4, 31, 4, 32, 5, 33, 6, 34, 3, 35, 6, 0, 2, 0, 36, 36, -1, 13, 1, 0, 4, 2, 5, 3, 6, 3, 7, 4, 8, 15, 9, 6, 10, 7, 11, 8, 12, 2, 37, 8, 38, 16, 39, 10, 0 </int_array>
 			<string> "variants" </string>
 			<array  len="17" shared="false">
 				<node_path> "" </node_path>
