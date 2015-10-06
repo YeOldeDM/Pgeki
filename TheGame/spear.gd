@@ -72,6 +72,6 @@ func blink():
 	else:
 		blink_timer += 1
 		if(blink_timer > 3):
-			get_child(0).set_modulate(Color(1.0,1.0,1.0,1.0))
+			get_child(0).set_modulate(Color(1.0,0.5,0.5,1.0))
 			blink_timer = 0
 			blinker=true
