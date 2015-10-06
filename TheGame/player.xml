@@ -127,13 +127,13 @@
 			<string> "sample" </string>
 			<resource  resource_type="Sample" path="res://sfx/pkjump.wav">  </resource>
 		</dictionary>
-		<dictionary name="samples/toss" shared="false">
+		<dictionary name="samples/footstep" shared="false">
 			<string> "db" </string>
-			<real> 0 </real>
+			<real> 20 </real>
 			<string> "pitch" </string>
-			<real> 1 </real>
+			<real> 0.7 </real>
 			<string> "sample" </string>
-			<resource  resource_type="Sample" path="res://sfx/toss.wav">  </resource>
+			<resource  resource_type="Sample" path="res://sfx/footstep.wav">  </resource>
 		</dictionary>
 		<dictionary name="samples/land" shared="false">
 			<string> "db" </string>
@@ -143,13 +143,13 @@
 			<string> "sample" </string>
 			<resource  resource_type="Sample" path="res://sfx/pkland.wav">  </resource>
 		</dictionary>
-		<dictionary name="samples/footstep" shared="false">
+		<dictionary name="samples/toss" shared="false">
 			<string> "db" </string>
-			<real> 20 </real>
+			<real> 0 </real>
 			<string> "pitch" </string>
-			<real> 0.7 </real>
+			<real> 1 </real>
 			<string> "sample" </string>
-			<resource  resource_type="Sample" path="res://sfx/footstep.wav">  </resource>
+			<resource  resource_type="Sample" path="res://sfx/toss.wav">  </resource>
 		</dictionary>
 
 	</resource>
@@ -261,9 +261,9 @@
 			<string> "node_count" </string>
 			<int> 7 </int>
 			<string> "nodes" </string>
-			<int_array  len="333"> 				-1, -1, 1, 0, -1, 37, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 12, 8, 13, 9, 14, 10, 15, 11, 16, 8, 17, 12, 18, 13, 19, 8, 20, 3, 21, 3, 22, 9, 23, 14, 24, 5, 25, 5, 26, 2, 27, 1, 28, 9, 29, 15, 30, 8, 31, 8, 32, 1, 33, 4, 34, 5, 35, 16, 36, 16, 37, 17, 38, 18, 0, 0, 0, 40, 39, -1, 22, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 41, 19, 42, 1, 43, 4, 44, 8, 45, 8, 46, 3, 47, 20, 48, 9, 49, 21, 50, 8, 51, 22, 38, 23, 0, 0, 0, 53, 52, -1, 12, 2, 0, 54, 3, 55, 5, 56, 24, 57, 25, 58, 26, 59, 27, 60, 28, 61, 1, 62, 29, 63, 30, 64, 31, 0, 0, 0, 65, 65, -1, 26, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 32, 8, 5, 9, 6, 10, 7, 11, 1, 42, 1, 66, 8, 67, 1, 68, 33, 69, 6, 70, 7, 71, 7, 72, 34, 73, 35, 74, 1, 75, 1, 76, 36, 77, 37, 78, 36, 79, 37, 38, 38, 0, 0, 0, 80, 80, -1, 12, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 39, 8, 5, 9, 40, 10, 7, 11, 1, 81, 10, 82, 8, 0, 0, 0, 84, 83, -1, 19, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 41, 8, 5, 9, 6, 10, 7, 11, 1, 85, 5, 86, 2, 87, 2, 88, 42, 89, 2, 90, 3, 91, 43, 92, 5, 38, 44, 0, 0, 0, 93, 93, -1, 14, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 94, 7, 95, 45, 82, 8, 38, 46, 0 </int_array>
+			<int_array  len="333"> 				-1, -1, 1, 0, -1, 37, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 12, 8, 13, 9, 14, 10, 15, 11, 16, 8, 17, 12, 18, 13, 19, 8, 20, 3, 21, 3, 22, 9, 23, 14, 24, 5, 25, 5, 26, 2, 27, 1, 28, 9, 29, 15, 30, 8, 31, 8, 32, 1, 33, 4, 34, 5, 35, 16, 36, 16, 37, 17, 38, 18, 0, 0, 0, 40, 39, -1, 22, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 41, 19, 42, 1, 43, 4, 44, 8, 45, 8, 46, 3, 47, 20, 48, 9, 49, 21, 50, 8, 51, 22, 38, 23, 0, 0, 0, 53, 52, -1, 12, 2, 0, 54, 3, 55, 5, 56, 24, 57, 25, 58, 26, 59, 27, 60, 28, 61, 1, 62, 29, 63, 30, 64, 31, 0, 0, 0, 65, 65, -1, 26, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 32, 8, 5, 9, 6, 10, 7, 11, 1, 42, 1, 66, 8, 67, 1, 68, 33, 69, 6, 70, 7, 71, 34, 72, 35, 73, 36, 74, 1, 75, 1, 76, 37, 77, 38, 78, 37, 79, 38, 38, 39, 0, 0, 0, 80, 80, -1, 12, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 40, 8, 5, 9, 41, 10, 7, 11, 1, 81, 10, 82, 8, 0, 0, 0, 84, 83, -1, 19, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 42, 8, 5, 9, 6, 10, 7, 11, 1, 85, 5, 86, 2, 87, 2, 88, 43, 89, 2, 90, 3, 91, 44, 92, 5, 38, 45, 0, 0, 0, 93, 93, -1, 14, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 94, 7, 95, 46, 82, 8, 38, 47, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="47" shared="false">
+			<array  len="48" shared="false">
 				<node_path> "" </node_path>
 				<bool> True </bool>
 				<real> 1 </real>
@@ -284,13 +284,13 @@
 				<resource  resource_type="Script" path="res://player.gd">  </resource>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_screen__" </string>
-					<string> "Script" </string>
+					<string> "2D" </string>
 					<string> "__editor_plugin_states__" </string>
 					<dictionary  shared="false">
 						<string> "2D" </string>
 						<dictionary  shared="false">
 							<string> "ofs" </string>
-							<vector2> -33.2305, -17.1098 </vector2>
+							<vector2> -56.6785, -26.1615 </vector2>
 							<string> "snap_grid" </string>
 							<bool> True </bool>
 							<string> "snap_offset" </string>
@@ -310,7 +310,7 @@
 							<string> "snap_step" </string>
 							<vector2> 2, 2 </vector2>
 							<string> "zoom" </string>
-							<real> 15.956037 </real>
+							<real> 10.585561 </real>
 						</dictionary>
 						<string> "3D" </string>
 						<dictionary  shared="false">
@@ -442,8 +442,9 @@
 				<string> "running" </string>
 				<vector2> 0, 2 </vector2>
 				<real> 5 </real>
+				<int> 16 </int>
 				<int> 1000 </int>
-				<int> 112 </int>
+				<int> 128 </int>
 				<real> 0.2 </real>
 				<real> 0.8 </real>
 				<dictionary  shared="false">
