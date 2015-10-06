@@ -12,7 +12,7 @@ var is_active=false
 
 func _draw_score(delta):
 	real_score = get_node('/root/globals').SCORE
-	print(real_score)
+
 	if (int(my_score)!=real_score):
 		if(my_score < real_score):
 			my_score += delta*100

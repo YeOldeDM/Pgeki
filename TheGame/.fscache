@@ -1,4 +1,4 @@
-::res://::1444120942
+::res://::1444121205
 BG.scn::PackedScene::1443526913::
 HUD.scn::PackedScene::1444113568::
 blub.gd::GDScript::1444119237::
@@ -15,8 +15,8 @@ player.xml::PackedScene::1444113792::
 score.gd::GDScript::1444119237::
 spear.gd::GDScript::1444119237::
 spear.xml::PackedScene::1444116314::
-splash.gd::GDScript::1444120942::
-splash.scn::PackedScene::1444120937::
+splash.gd::GDScript::1444121205::
+splash.scn::PackedScene::1444121096::
 village_tiles.xml::PackedScene::1444098203::
 village_tileset.xml::TileSet::1444098201::
 ::res://bgm::1443733637

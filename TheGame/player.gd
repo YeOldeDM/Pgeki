@@ -100,6 +100,9 @@ func _integrate_forces(state):
 		#rate of fire switch
 		did_shoot = true
 		can_shoot = false
+		
+		#play SFX
+		get_node('sound').play('toss')
 	elif unaction:
 		can_shoot = true
 

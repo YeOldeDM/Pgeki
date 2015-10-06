@@ -22,6 +22,7 @@ var player_class = preload('res://player.gd')
 
 func _die():
 	get_node('/root/globals').SCORE += POINT_VALUE
+	print("+",POINT_VALUE," points!")
 	get_node('/root/Root/hud/Bar/ScoreValue')._activate()
 	queue_free()
 
