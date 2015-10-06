@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="TileSet" subresource_count="3" version="1.1" version_name="Godot Engine v1.1.stable.d3b42e41b0">
+<resource_file type="TileSet" subresource_count="16" version="1.1" version_name="Godot Engine v1.1.stable.d3b42e41b0">
+	<ext_resource path="res://graphics/VILLAGE_TILES.png" type="Texture"></ext_resource>
+	<ext_resource path="res://graphics/VILLAGE_TILES.png" type="Texture"></ext_resource>
+	<ext_resource path="res://graphics/VILLAGE_TILES.png" type="Texture"></ext_resource>
+	<ext_resource path="res://graphics/VILLAGE_TILES.png" type="Texture"></ext_resource>
+	<ext_resource path="res://graphics/VILLAGE_TILES.png" type="Texture"></ext_resource>
+	<ext_resource path="res://graphics/VILLAGE_TILES.png" type="Texture"></ext_resource>
+	<ext_resource path="res://graphics/VILLAGE_TILES.png" type="Texture"></ext_resource>
+	<ext_resource path="res://graphics/VILLAGE_TILES.png" type="Texture"></ext_resource>
+	<ext_resource path="res://graphics/VILLAGE_TILES.png" type="Texture"></ext_resource>
+	<ext_resource path="res://graphics/VILLAGE_TILES.png" type="Texture"></ext_resource>
+	<ext_resource path="res://graphics/VILLAGE_TILES.png" type="Texture"></ext_resource>
+	<ext_resource path="res://graphics/VILLAGE_TILES.png" type="Texture"></ext_resource>
+	<ext_resource path="res://graphics/VILLAGE_TILES.png" type="Texture"></ext_resource>
 	<ext_resource path="res://graphics/VILLAGE_TILES.png" type="Texture"></ext_resource>
 	<resource type="ConvexPolygonShape2D" path="local://1">
 		<real name="custom_solver_bias"> 0 </real>
@@ -7,14 +20,144 @@
 
 	</resource>
 	<main_resource>
-		<string name="0/name"> "Sprite" </string>
+		<string name="0/name"> "sand top shoulder w" </string>
 		<resource name="0/texture" resource_type="Texture" path="res://graphics/VILLAGE_TILES.png">  </resource>
 		<vector2 name="0/tex_offset"> 4, 4 </vector2>
-		<resource name="0/material"></resource>		<rect2 name="0/region"> 8, 32, 8, 8 </rect2>
+		<resource name="0/material"></resource>		<rect2 name="0/region"> 0, 24, 8, 8 </rect2>
 		<vector2 name="0/occluder_offset"> -0, -0 </vector2>
 		<resource name="0/occluder"></resource>		<vector2 name="0/navigation_offset"> -0, -0 </vector2>
 		<resource name="0/navigation"></resource>		<vector2 name="0/shape_offset"> -0, -0 </vector2>
 		<array name="0/shapes" len="1" shared="false">
+			<resource  resource_type="Shape2D" path="local://1">  </resource>
+		</array>
+		<string name="1/name"> "sand top" </string>
+		<resource name="1/texture" resource_type="Texture" path="res://graphics/VILLAGE_TILES.png">  </resource>
+		<vector2 name="1/tex_offset"> 4, 4 </vector2>
+		<resource name="1/material"></resource>		<rect2 name="1/region"> 8, 24, 8, 8 </rect2>
+		<vector2 name="1/occluder_offset"> -0, -0 </vector2>
+		<resource name="1/occluder"></resource>		<vector2 name="1/navigation_offset"> -0, -0 </vector2>
+		<resource name="1/navigation"></resource>		<vector2 name="1/shape_offset"> -0, -0 </vector2>
+		<array name="1/shapes" len="1" shared="false">
+			<resource  resource_type="Shape2D" path="local://1">  </resource>
+		</array>
+		<string name="2/name"> "sand top shoulder e" </string>
+		<resource name="2/texture" resource_type="Texture" path="res://graphics/VILLAGE_TILES.png">  </resource>
+		<vector2 name="2/tex_offset"> 4, 4 </vector2>
+		<resource name="2/material"></resource>		<rect2 name="2/region"> 16, 24, 8, 8 </rect2>
+		<vector2 name="2/occluder_offset"> -0, -0 </vector2>
+		<resource name="2/occluder"></resource>		<vector2 name="2/navigation_offset"> -0, -0 </vector2>
+		<resource name="2/navigation"></resource>		<vector2 name="2/shape_offset"> -0, -0 </vector2>
+		<array name="2/shapes" len="1" shared="false">
+			<resource  resource_type="Shape2D" path="local://1">  </resource>
+		</array>
+		<string name="3/name"> "sand side w" </string>
+		<resource name="3/texture" resource_type="Texture" path="res://graphics/VILLAGE_TILES.png">  </resource>
+		<vector2 name="3/tex_offset"> 4, 4 </vector2>
+		<resource name="3/material"></resource>		<rect2 name="3/region"> 0, 32, 8, 8 </rect2>
+		<vector2 name="3/occluder_offset"> -0, -0 </vector2>
+		<resource name="3/occluder"></resource>		<vector2 name="3/navigation_offset"> -0, -0 </vector2>
+		<resource name="3/navigation"></resource>		<vector2 name="3/shape_offset"> -0, -0 </vector2>
+		<array name="3/shapes" len="1" shared="false">
+			<resource  resource_type="Shape2D" path="local://1">  </resource>
+		</array>
+		<string name="4/name"> "sand solid" </string>
+		<resource name="4/texture" resource_type="Texture" path="res://graphics/VILLAGE_TILES.png">  </resource>
+		<vector2 name="4/tex_offset"> 4, 4 </vector2>
+		<resource name="4/material"></resource>		<rect2 name="4/region"> 8, 32, 8, 8 </rect2>
+		<vector2 name="4/occluder_offset"> -0, -0 </vector2>
+		<resource name="4/occluder"></resource>		<vector2 name="4/navigation_offset"> -0, -0 </vector2>
+		<resource name="4/navigation"></resource>		<vector2 name="4/shape_offset"> -0, -0 </vector2>
+		<array name="4/shapes" len="1" shared="false">
+			<resource  resource_type="Shape2D" path="local://1">  </resource>
+		</array>
+		<string name="5/name"> "sand side e" </string>
+		<resource name="5/texture" resource_type="Texture" path="res://graphics/VILLAGE_TILES.png">  </resource>
+		<vector2 name="5/tex_offset"> 4, 4 </vector2>
+		<resource name="5/material"></resource>		<rect2 name="5/region"> 16, 32, 8, 8 </rect2>
+		<vector2 name="5/occluder_offset"> -0, -0 </vector2>
+		<resource name="5/occluder"></resource>		<vector2 name="5/navigation_offset"> -0, -0 </vector2>
+		<resource name="5/navigation"></resource>		<vector2 name="5/shape_offset"> -0, -0 </vector2>
+		<array name="5/shapes" len="1" shared="false">
+			<resource  resource_type="Shape2D" path="local://1">  </resource>
+		</array>
+		<string name="6/name"> "sand top L w" </string>
+		<resource name="6/texture" resource_type="Texture" path="res://graphics/VILLAGE_TILES.png">  </resource>
+		<vector2 name="6/tex_offset"> 4, 4 </vector2>
+		<resource name="6/material"></resource>		<rect2 name="6/region"> 0, 40, 8, 8 </rect2>
+		<vector2 name="6/occluder_offset"> -0, -0 </vector2>
+		<resource name="6/occluder"></resource>		<vector2 name="6/navigation_offset"> -0, -0 </vector2>
+		<resource name="6/navigation"></resource>		<vector2 name="6/shape_offset"> -0, -0 </vector2>
+		<array name="6/shapes" len="1" shared="false">
+			<resource  resource_type="Shape2D" path="local://1">  </resource>
+		</array>
+		<string name="7/name"> "sand solid var" </string>
+		<resource name="7/texture" resource_type="Texture" path="res://graphics/VILLAGE_TILES.png">  </resource>
+		<vector2 name="7/tex_offset"> 4, 4 </vector2>
+		<resource name="7/material"></resource>		<rect2 name="7/region"> 8, 40, 8, 8 </rect2>
+		<vector2 name="7/occluder_offset"> -0, -0 </vector2>
+		<resource name="7/occluder"></resource>		<vector2 name="7/navigation_offset"> -0, -0 </vector2>
+		<resource name="7/navigation"></resource>		<vector2 name="7/shape_offset"> -0, -0 </vector2>
+		<array name="7/shapes" len="1" shared="false">
+			<resource  resource_type="Shape2D" path="local://1">  </resource>
+		</array>
+		<string name="8/name"> "sand top L e" </string>
+		<resource name="8/texture" resource_type="Texture" path="res://graphics/VILLAGE_TILES.png">  </resource>
+		<vector2 name="8/tex_offset"> 4, 4 </vector2>
+		<resource name="8/material"></resource>		<rect2 name="8/region"> 16, 40, 8, 8 </rect2>
+		<vector2 name="8/occluder_offset"> -0, -0 </vector2>
+		<resource name="8/occluder"></resource>		<vector2 name="8/navigation_offset"> -0, -0 </vector2>
+		<resource name="8/navigation"></resource>		<vector2 name="8/shape_offset"> -0, -0 </vector2>
+		<array name="8/shapes" len="1" shared="false">
+			<resource  resource_type="Shape2D" path="local://1">  </resource>
+		</array>
+		<string name="9/name"> "sand bottom shoulder w" </string>
+		<resource name="9/texture" resource_type="Texture" path="res://graphics/VILLAGE_TILES.png">  </resource>
+		<vector2 name="9/tex_offset"> 4, 4 </vector2>
+		<resource name="9/material"></resource>		<rect2 name="9/region"> 0, 48, 8, 8 </rect2>
+		<vector2 name="9/occluder_offset"> -0, -0 </vector2>
+		<resource name="9/occluder"></resource>		<vector2 name="9/navigation_offset"> -0, -0 </vector2>
+		<resource name="9/navigation"></resource>		<vector2 name="9/shape_offset"> -0, -0 </vector2>
+		<array name="9/shapes" len="1" shared="false">
+			<resource  resource_type="Shape2D" path="local://1">  </resource>
+		</array>
+		<string name="10/name"> "sand bottom" </string>
+		<resource name="10/texture" resource_type="Texture" path="res://graphics/VILLAGE_TILES.png">  </resource>
+		<vector2 name="10/tex_offset"> 4, 4 </vector2>
+		<resource name="10/material"></resource>		<rect2 name="10/region"> 8, 48, 8, 8 </rect2>
+		<vector2 name="10/occluder_offset"> -0, -0 </vector2>
+		<resource name="10/occluder"></resource>		<vector2 name="10/navigation_offset"> -0, -0 </vector2>
+		<resource name="10/navigation"></resource>		<vector2 name="10/shape_offset"> -0, -0 </vector2>
+		<array name="10/shapes" len="1" shared="false">
+			<resource  resource_type="Shape2D" path="local://1">  </resource>
+		</array>
+		<string name="11/name"> "sand bottom shoulder e" </string>
+		<resource name="11/texture" resource_type="Texture" path="res://graphics/VILLAGE_TILES.png">  </resource>
+		<vector2 name="11/tex_offset"> 4, 4 </vector2>
+		<resource name="11/material"></resource>		<rect2 name="11/region"> 16, 48, 8, 8 </rect2>
+		<vector2 name="11/occluder_offset"> -0, -0 </vector2>
+		<resource name="11/occluder"></resource>		<vector2 name="11/navigation_offset"> -0, -0 </vector2>
+		<resource name="11/navigation"></resource>		<vector2 name="11/shape_offset"> -0, -0 </vector2>
+		<array name="11/shapes" len="1" shared="false">
+			<resource  resource_type="Shape2D" path="local://1">  </resource>
+		</array>
+		<string name="12/name"> "sand bottom L w" </string>
+		<resource name="12/texture" resource_type="Texture" path="res://graphics/VILLAGE_TILES.png">  </resource>
+		<vector2 name="12/tex_offset"> 4, 4 </vector2>
+		<resource name="12/material"></resource>		<rect2 name="12/region"> 24, 48, 8, 8 </rect2>
+		<vector2 name="12/occluder_offset"> -0, -0 </vector2>
+		<resource name="12/occluder"></resource>		<vector2 name="12/navigation_offset"> -0, -0 </vector2>
+		<resource name="12/navigation"></resource>		<vector2 name="12/shape_offset"> -0, -0 </vector2>
+		<array name="12/shapes" len="1" shared="false">
+			<resource  resource_type="Shape2D" path="local://1">  </resource>
+		</array>
+		<string name="13/name"> "sand bottom L e" </string>
+		<resource name="13/texture" resource_type="Texture" path="res://graphics/VILLAGE_TILES.png">  </resource>
+		<vector2 name="13/tex_offset"> 4, 4 </vector2>
+		<resource name="13/material"></resource>		<rect2 name="13/region"> 32, 48, 8, 8 </rect2>
+		<vector2 name="13/occluder_offset"> -0, -0 </vector2>
+		<resource name="13/occluder"></resource>		<vector2 name="13/navigation_offset"> -0, -0 </vector2>
+		<resource name="13/navigation"></resource>		<vector2 name="13/shape_offset"> -0, -0 </vector2>
+		<array name="13/shapes" len="1" shared="false">
 			<resource  resource_type="Shape2D" path="local://1">  </resource>
 		</array>
 
