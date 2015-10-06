@@ -31,6 +31,7 @@ func _integrate_forces(state):
 			if (not did_hit):		#switch: we hit
 				did_hit = true
 				get_node('sound').play('hit')	#Thud!
+				get_node('animator').play('thunk')
 
 func _ready():
 	# Initialize!

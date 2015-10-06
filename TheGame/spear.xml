@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="6" version="1.1" version_name="Godot Engine v1.1.stable.d3b42e41b0">
+<resource_file type="PackedScene" subresource_count="7" version="1.1" version_name="Godot Engine v1.1.stable.d3b42e41b0">
 	<ext_resource path="res://spear.gd" type="Script"></ext_resource>
 	<ext_resource path="res://graphics/spear.png" type="Texture"></ext_resource>
 	<ext_resource path="res://sfx/hit.wav" type="Sample"></ext_resource>
@@ -19,6 +19,64 @@
 		</dictionary>
 
 	</resource>
+	<resource type="Animation" path="local://3">
+		<string name="resource/name"> "thunk" </string>
+		<real name="length"> 1 </real>
+		<bool name="loop"> False </bool>
+		<real name="step"> 0.1 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> "Sprite:transform/rot" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="9"> 				0, 0.2, 0.3, 0.4, 0.5, 0.7, 0.8, 0.9, 1 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="9"> 				1, 1, 1, 1, 1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="9" shared="false">
+				<real> 0 </real>
+				<real> -21.213236 </real>
+				<real> 17.441984 </real>
+				<real> -8.382593 </real>
+				<real> -5.675033 </real>
+				<real> 15.7388 </real>
+				<real> -9.113 </real>
+				<real> 3.843966 </real>
+				<real> 0 </real>
+			</array>
+		</dictionary>
+		<string name="tracks/1/type"> "value" </string>
+		<node_path name="tracks/1/path"> "Sprite:transform/scale" </node_path>
+		<int name="tracks/1/interp"> 1 </int>
+		<dictionary name="tracks/1/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="0"> 				 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="0"> 				 </real_array>
+			<string> "values" </string>
+			<array  len="0" shared="false">
+			</array>
+		</dictionary>
+		<string name="tracks/2/type"> "value" </string>
+		<node_path name="tracks/2/path"> "Sprite:transform/pos" </node_path>
+		<int name="tracks/2/interp"> 1 </int>
+		<dictionary name="tracks/2/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="0"> 				 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="0"> 				 </real_array>
+			<string> "values" </string>
+			<array  len="0" shared="false">
+			</array>
+		</dictionary>
+
+	</resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "conn_count" </string>
@@ -26,7 +84,7 @@
 			<string> "conns" </string>
 			<int_array  len="0"> 				 </int_array>
 			<string> "names" </string>
-			<string_array  len="65">
+			<string_array  len="75">
 				<string> "Spear" </string>
 				<string> "RigidBody2D" </string>
 				<string> "_import_path" </string>
@@ -92,13 +150,23 @@
 				<string> "config/polyphony" </string>
 				<string> "config/samples" </string>
 				<string> "config/pitch_random" </string>
+				<string> "animator" </string>
+				<string> "AnimationPlayer" </string>
+				<string> "playback/process_mode" </string>
+				<string> "playback/default_blend_time" </string>
+				<string> "root/root" </string>
+				<string> "anims/thunk" </string>
+				<string> "playback/active" </string>
+				<string> "playback/speed" </string>
+				<string> "blend_times" </string>
+				<string> "autoplay" </string>
 			</string_array>
 			<string> "node_count" </string>
-			<int> 5 </int>
+			<int> 6 </int>
 			<string> "nodes" </string>
-			<int_array  len="231"> 				-1, -1, 1, 0, -1, 34, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 12, 8, 13, 3, 14, 9, 15, 10, 16, 8, 17, 3, 18, 3, 19, 11, 20, 12, 21, 5, 22, 5, 23, 13, 24, 8, 25, 7, 26, 14, 27, 8, 28, 8, 29, 1, 30, 4, 31, 5, 32, 15, 33, 15, 34, 16, 35, 17, 0, 0, 0, 36, 36, -1, 22, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 37, 18, 38, 1, 39, 19, 40, 8, 41, 8, 42, 3, 43, 3, 44, 7, 45, 20, 46, 8, 47, 21, 35, 22, 0, 0, 0, 49, 48, -1, 13, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 23, 8, 24, 9, 25, 10, 7, 11, 1, 50, 9, 51, 8, 35, 26, 0, 0, 0, 53, 52, -1, 11, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 27, 8, 5, 9, 28, 10, 7, 11, 1, 54, 29, 0, 0, 0, 56, 55, -1, 18, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 30, 8, 5, 9, 6, 10, 7, 11, 1, 57, 5, 58, 2, 59, 2, 60, 31, 61, 2, 62, 3, 63, 32, 64, 5, 0 </int_array>
+			<int_array  len="256"> 				-1, -1, 1, 0, -1, 34, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 12, 8, 13, 3, 14, 9, 15, 10, 16, 8, 17, 3, 18, 3, 19, 11, 20, 12, 21, 5, 22, 5, 23, 13, 24, 8, 25, 7, 26, 14, 27, 8, 28, 8, 29, 1, 30, 4, 31, 5, 32, 15, 33, 15, 34, 16, 35, 17, 0, 0, 0, 36, 36, -1, 22, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 37, 18, 38, 1, 39, 19, 40, 8, 41, 8, 42, 3, 43, 3, 44, 7, 45, 20, 46, 8, 47, 21, 35, 22, 0, 0, 0, 49, 48, -1, 13, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 23, 8, 24, 9, 25, 10, 7, 11, 1, 50, 9, 51, 8, 35, 26, 0, 0, 0, 53, 52, -1, 11, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 27, 8, 5, 9, 28, 10, 7, 11, 1, 54, 29, 0, 0, 0, 56, 55, -1, 18, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 30, 8, 5, 9, 6, 10, 7, 11, 1, 57, 5, 58, 2, 59, 2, 60, 31, 61, 2, 62, 3, 63, 32, 64, 5, 0, 0, 0, 66, 65, -1, 9, 2, 0, 67, 3, 68, 5, 69, 33, 70, 34, 71, 1, 72, 35, 73, 36, 74, 37, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="33" shared="false">
+			<array  len="38" shared="false">
 				<node_path> "" </node_path>
 				<bool> True </bool>
 				<real> 1 </real>
@@ -118,7 +186,7 @@
 				<resource  resource_type="Script" path="res://spear.gd">  </resource>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_screen__" </string>
-					<string> "2D" </string>
+					<string> "Script" </string>
 					<string> "__editor_plugin_states__" </string>
 					<dictionary  shared="false">
 						<string> "2D" </string>
@@ -278,6 +346,12 @@
 				<vector2> -9.62018, -1.8175 </vector2>
 				<real> 2048 </real>
 				<resource  resource_type="SampleLibrary" path="local://2">  </resource>
+				<node_path> ".." </node_path>
+				<resource  resource_type="Animation" path="local://3">  </resource>
+				<real> 1.4 </real>
+				<array  len="0" shared="false">
+				</array>
+				<string> "" </string>
 			</array>
 			<string> "version" </string>
 			<int> 1 </int>
