@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="3" version="1.1" version_name="Godot Engine v1.1.stable.d3b42e41b0">
-	<ext_resource path="res://graphics/Plemon.png" type="Texture"></ext_resource>
+	<ext_resource path="res://graphics/lemon.png" type="Texture"></ext_resource>
 	<resource type="Animation" path="local://1">
 		<string name="resource/name"> "spin" </string>
-		<real name="length"> 0.6 </real>
+		<real name="length"> 1 </real>
 		<bool name="loop"> True </bool>
 		<real name="step"> 0.1 </real>
 		<string name="tracks/0/type"> "value" </string>
@@ -13,17 +13,21 @@
 			<string> "cont" </string>
 			<bool> False </bool>
 			<string> "times" </string>
-			<real_array  len="6"> 				0, 0.1, 0.2, 0.3, 0.4, 0.5 </real_array>
+			<real_array  len="10"> 				0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9 </real_array>
 			<string> "transitions" </string>
-			<real_array  len="6"> 				1, 1, 1, 1, 1, 1 </real_array>
+			<real_array  len="10"> 				1, 1, 1, 1, 1, 1, 1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="6" shared="false">
+			<array  len="10" shared="false">
 				<int> 0 </int>
 				<int> 1 </int>
 				<int> 2 </int>
 				<int> 3 </int>
 				<int> 4 </int>
 				<int> 5 </int>
+				<int> 6 </int>
+				<int> 6 </int>
+				<int> 6 </int>
+				<int> 6 </int>
 			</array>
 		</dictionary>
 
@@ -102,7 +106,7 @@
 						<string> "2D" </string>
 						<dictionary  shared="false">
 							<string> "ofs" </string>
-							<vector2> -61.1831, -29.3879 </vector2>
+							<vector2> -29.9294, -15.1687 </vector2>
 							<string> "snap_grid" </string>
 							<bool> True </bool>
 							<string> "snap_offset" </string>
@@ -122,7 +126,7 @@
 							<string> "snap_step" </string>
 							<vector2> 1, 1 </vector2>
 							<string> "zoom" </string>
-							<real> 8.409477 </real>
+							<real> 14.045362 </real>
 						</dictionary>
 						<string> "3D" </string>
 						<dictionary  shared="false">
@@ -225,9 +229,9 @@
 						<int> 0 </int>
 					</dictionary>
 				</dictionary>
-				<resource  resource_type="Texture" path="res://graphics/Plemon.png">  </resource>
+				<resource  resource_type="Texture" path="res://graphics/lemon.png">  </resource>
 				<int> 2 </int>
-				<int> 3 </int>
+				<int> 4 </int>
 				<color> 1, 1, 1, 1 </color>
 				<rect2> 0, 0, 0, 0 </rect2>
 				<node_path> ".." </node_path>
