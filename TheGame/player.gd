@@ -23,6 +23,7 @@ var did_jump = false
 var stopping_jump=false
 var did_step = 0
 var did_shoot=false
+var can_shoot=true
 var is_hit=false
 
 # timers #
@@ -68,6 +69,7 @@ func _integrate_forces(state):
 	var move_left = Input.is_action_pressed('move_left')
 	var move_right = Input.is_action_pressed('move_right')
 	var action = Input.is_action_pressed('action')
+	var unaction = Input.is_action_pressed('action') == false
 	var jump = Input.is_action_pressed('jump')
 	var respawn = Input.is_action_pressed('respawn')
 	
@@ -80,7 +82,7 @@ func _integrate_forces(state):
 	
 	#  SPEAR THROWING  #
 	####################
-	if (action and not did_shoot):
+	if (action and can_shoot and not did_shoot):
 		var bullet = spear.instance()
 		var pos = get_pos()
 		bullet.set_pos(pos)
@@ -97,6 +99,9 @@ func _integrate_forces(state):
 		
 		#rate of fire switch
 		did_shoot = true
+		can_shoot = false
+	elif unaction:
+		can_shoot = true
 
 
 	#  FLOOR COLLISION  #
