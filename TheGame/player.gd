@@ -272,9 +272,9 @@ func get_hit(origin):
 		var target_pos = origin.get_pos()	#position of origin
 		var my_pos = get_pos()				#my position
 		var vect = target_pos - my_pos		#Vector between the two
-		vect.y = abs(vect.y)				#ensure 'upward' kick
+		vect.y = -abs(vect.y)				#ensure 'upward' kick
 
-		set_linear_velocity(-vect*8)		#set velocity inverted
+		set_linear_velocity(-vect*18)		#set velocity inverted
 		
 		#call draw function to HUD Hearts
 		get_node('/root/Root/hud/hearts')._draw_hearts()
@@ -296,12 +296,12 @@ func _process(delta):
 	if Input.is_action_pressed('respawn'):
 		set_pos(respawn_point)
 		
-	#DEV HACK: Spawn a Blub (or twenty) in front of you
+	#DEV HACK: Spawn a Blub (or twenty) behind you
 	if Input.is_action_pressed('DEV_spawn_blub'):
 		var guy = mob.instance()
 		var pos = get_pos()
-		pos.x += 10*facing
-		pos.y -= 5
+		pos.x -= 10*facing
+		pos.y -= 10
 		guy.set_pos(pos)
 		get_parent().add_child(guy)
 	
