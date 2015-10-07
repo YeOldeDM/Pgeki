@@ -247,7 +247,7 @@ func _integrate_forces(state):
 		var frame = get_node('sprite').get_frame()
 		
 		if(frame == 4 or frame == 9) and did_step != frame:		#Pgeki puts a foot down on frame #4 & #9
-			get_node('sound').play('footstep')
+			get_node('sound').play('step')
 			did_step = frame
 
 	#  APPLY VELOCITIES TO OUR RIGIDBODY  #
