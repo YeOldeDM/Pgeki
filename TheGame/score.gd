@@ -15,14 +15,16 @@ func _draw_score(delta):
 
 	if (int(my_score)!=real_score):
 		if(my_score < real_score):
-			my_score += delta*100
+			my_score += delta*50
 		else:
-			my_score -= delta*100
+			my_score -= delta*50
 	else:
 		my_score = real_score
 		is_active=false
 	var int_score = int(my_score) 
 	set_text(str(int_score))
+	
+	
 func _ready():
 	set_process(true)
 	

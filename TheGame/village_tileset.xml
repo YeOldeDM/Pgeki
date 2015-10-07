@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="TileSet" subresource_count="16" version="1.1" version_name="Godot Engine v1.1.stable.d3b42e41b0">
+<resource_file type="TileSet" subresource_count="28" version="1.1" version_name="Godot Engine v1.1.stable.d3b42e41b0">
+	<ext_resource path="res://graphics/VILLAGE_TILES.png" type="Texture"></ext_resource>
+	<ext_resource path="res://graphics/VILLAGE_TILES.png" type="Texture"></ext_resource>
+	<ext_resource path="res://graphics/VILLAGE_TILES.png" type="Texture"></ext_resource>
+	<ext_resource path="res://graphics/VILLAGE_TILES.png" type="Texture"></ext_resource>
+	<ext_resource path="res://graphics/VILLAGE_TILES.png" type="Texture"></ext_resource>
+	<ext_resource path="res://graphics/VILLAGE_TILES.png" type="Texture"></ext_resource>
+	<ext_resource path="res://graphics/VILLAGE_TILES.png" type="Texture"></ext_resource>
+	<ext_resource path="res://graphics/VILLAGE_TILES.png" type="Texture"></ext_resource>
+	<ext_resource path="res://graphics/VILLAGE_TILES.png" type="Texture"></ext_resource>
+	<ext_resource path="res://graphics/VILLAGE_TILES.png" type="Texture"></ext_resource>
+	<ext_resource path="res://graphics/VILLAGE_TILES.png" type="Texture"></ext_resource>
+	<ext_resource path="res://graphics/VILLAGE_TILES.png" type="Texture"></ext_resource>
 	<ext_resource path="res://graphics/VILLAGE_TILES.png" type="Texture"></ext_resource>
 	<ext_resource path="res://graphics/VILLAGE_TILES.png" type="Texture"></ext_resource>
 	<ext_resource path="res://graphics/VILLAGE_TILES.png" type="Texture"></ext_resource>
@@ -159,6 +171,114 @@
 		<resource name="13/navigation"></resource>		<vector2 name="13/shape_offset"> -0, -0 </vector2>
 		<array name="13/shapes" len="1" shared="false">
 			<resource  resource_type="Shape2D" path="local://1">  </resource>
+		</array>
+		<string name="14/name"> "Tree" </string>
+		<resource name="14/texture" resource_type="Texture" path="res://graphics/VILLAGE_TILES.png">  </resource>
+		<vector2 name="14/tex_offset"> 4, 4 </vector2>
+		<resource name="14/material"></resource>		<rect2 name="14/region"> 0, 0, 24, 24 </rect2>
+		<vector2 name="14/occluder_offset"> -0, -0 </vector2>
+		<resource name="14/occluder"></resource>		<vector2 name="14/navigation_offset"> -0, -0 </vector2>
+		<resource name="14/navigation"></resource>		<vector2 name="14/shape_offset"> 0, 0 </vector2>
+		<array name="14/shapes" len="0" shared="false">
+		</array>
+		<string name="15/name"> "Bush" </string>
+		<resource name="15/texture" resource_type="Texture" path="res://graphics/VILLAGE_TILES.png">  </resource>
+		<vector2 name="15/tex_offset"> 4, 4 </vector2>
+		<resource name="15/material"></resource>		<rect2 name="15/region"> 24, 16, 8, 8 </rect2>
+		<vector2 name="15/occluder_offset"> -0, -0 </vector2>
+		<resource name="15/occluder"></resource>		<vector2 name="15/navigation_offset"> -0, -0 </vector2>
+		<resource name="15/navigation"></resource>		<vector2 name="15/shape_offset"> 0, 0 </vector2>
+		<array name="15/shapes" len="0" shared="false">
+		</array>
+		<string name="16/name"> "Grass1" </string>
+		<resource name="16/texture" resource_type="Texture" path="res://graphics/VILLAGE_TILES.png">  </resource>
+		<vector2 name="16/tex_offset"> 4, 4 </vector2>
+		<resource name="16/material"></resource>		<rect2 name="16/region"> 32, 16, 8, 8 </rect2>
+		<vector2 name="16/occluder_offset"> -0, -0 </vector2>
+		<resource name="16/occluder"></resource>		<vector2 name="16/navigation_offset"> -0, -0 </vector2>
+		<resource name="16/navigation"></resource>		<vector2 name="16/shape_offset"> 0, 0 </vector2>
+		<array name="16/shapes" len="0" shared="false">
+		</array>
+		<string name="17/name"> "Grass2" </string>
+		<resource name="17/texture" resource_type="Texture" path="res://graphics/VILLAGE_TILES.png">  </resource>
+		<vector2 name="17/tex_offset"> 4, 4 </vector2>
+		<resource name="17/material"></resource>		<rect2 name="17/region"> 40, 16, 8, 8 </rect2>
+		<vector2 name="17/occluder_offset"> -0, -0 </vector2>
+		<resource name="17/occluder"></resource>		<vector2 name="17/navigation_offset"> -0, -0 </vector2>
+		<resource name="17/navigation"></resource>		<vector2 name="17/shape_offset"> 0, 0 </vector2>
+		<array name="17/shapes" len="0" shared="false">
+		</array>
+		<string name="18/name"> "clutter1" </string>
+		<resource name="18/texture" resource_type="Texture" path="res://graphics/VILLAGE_TILES.png">  </resource>
+		<vector2 name="18/tex_offset"> 4, 4 </vector2>
+		<resource name="18/material"></resource>		<rect2 name="18/region"> 24, 24, 8, 8 </rect2>
+		<vector2 name="18/occluder_offset"> -0, -0 </vector2>
+		<resource name="18/occluder"></resource>		<vector2 name="18/navigation_offset"> -0, -0 </vector2>
+		<resource name="18/navigation"></resource>		<vector2 name="18/shape_offset"> 0, 0 </vector2>
+		<array name="18/shapes" len="0" shared="false">
+		</array>
+		<string name="19/name"> "clutter2" </string>
+		<resource name="19/texture" resource_type="Texture" path="res://graphics/VILLAGE_TILES.png">  </resource>
+		<vector2 name="19/tex_offset"> 4, 4 </vector2>
+		<resource name="19/material"></resource>		<rect2 name="19/region"> 32, 24, 8, 8 </rect2>
+		<vector2 name="19/occluder_offset"> -0, -0 </vector2>
+		<resource name="19/occluder"></resource>		<vector2 name="19/navigation_offset"> -0, -0 </vector2>
+		<resource name="19/navigation"></resource>		<vector2 name="19/shape_offset"> 0, 0 </vector2>
+		<array name="19/shapes" len="0" shared="false">
+		</array>
+		<string name="20/name"> "clutter3" </string>
+		<resource name="20/texture" resource_type="Texture" path="res://graphics/VILLAGE_TILES.png">  </resource>
+		<vector2 name="20/tex_offset"> 4, 4 </vector2>
+		<resource name="20/material"></resource>		<rect2 name="20/region"> 40, 24, 8, 8 </rect2>
+		<vector2 name="20/occluder_offset"> -0, -0 </vector2>
+		<resource name="20/occluder"></resource>		<vector2 name="20/navigation_offset"> -0, -0 </vector2>
+		<resource name="20/navigation"></resource>		<vector2 name="20/shape_offset"> 0, 0 </vector2>
+		<array name="20/shapes" len="0" shared="false">
+		</array>
+		<string name="21/name"> "fence end w" </string>
+		<resource name="21/texture" resource_type="Texture" path="res://graphics/VILLAGE_TILES.png">  </resource>
+		<vector2 name="21/tex_offset"> 4, 4 </vector2>
+		<resource name="21/material"></resource>		<rect2 name="21/region"> 24, 0, 8, 8 </rect2>
+		<vector2 name="21/occluder_offset"> -0, -0 </vector2>
+		<resource name="21/occluder"></resource>		<vector2 name="21/navigation_offset"> -0, -0 </vector2>
+		<resource name="21/navigation"></resource>		<vector2 name="21/shape_offset"> 0, 0 </vector2>
+		<array name="21/shapes" len="0" shared="false">
+		</array>
+		<string name="22/name"> "fence mid" </string>
+		<resource name="22/texture" resource_type="Texture" path="res://graphics/VILLAGE_TILES.png">  </resource>
+		<vector2 name="22/tex_offset"> 4, 4 </vector2>
+		<resource name="22/material"></resource>		<rect2 name="22/region"> 32, 0, 8, 8 </rect2>
+		<vector2 name="22/occluder_offset"> -0, -0 </vector2>
+		<resource name="22/occluder"></resource>		<vector2 name="22/navigation_offset"> -0, -0 </vector2>
+		<resource name="22/navigation"></resource>		<vector2 name="22/shape_offset"> 0, 0 </vector2>
+		<array name="22/shapes" len="0" shared="false">
+		</array>
+		<string name="23/name"> "fence end e" </string>
+		<resource name="23/texture" resource_type="Texture" path="res://graphics/VILLAGE_TILES.png">  </resource>
+		<vector2 name="23/tex_offset"> 4, 4 </vector2>
+		<resource name="23/material"></resource>		<rect2 name="23/region"> 40, 0, 8, 8 </rect2>
+		<vector2 name="23/occluder_offset"> -0, -0 </vector2>
+		<resource name="23/occluder"></resource>		<vector2 name="23/navigation_offset"> -0, -0 </vector2>
+		<resource name="23/navigation"></resource>		<vector2 name="23/shape_offset"> 0, 0 </vector2>
+		<array name="23/shapes" len="0" shared="false">
+		</array>
+		<string name="24/name"> "hut" </string>
+		<resource name="24/texture" resource_type="Texture" path="res://graphics/VILLAGE_TILES.png">  </resource>
+		<vector2 name="24/tex_offset"> 4, 4 </vector2>
+		<resource name="24/material"></resource>		<rect2 name="24/region"> 32, 32, 16, 16 </rect2>
+		<vector2 name="24/occluder_offset"> -0, -0 </vector2>
+		<resource name="24/occluder"></resource>		<vector2 name="24/navigation_offset"> -0, -0 </vector2>
+		<resource name="24/navigation"></resource>		<vector2 name="24/shape_offset"> 0, 0 </vector2>
+		<array name="24/shapes" len="0" shared="false">
+		</array>
+		<string name="25/name"> "mailbox" </string>
+		<resource name="25/texture" resource_type="Texture" path="res://graphics/VILLAGE_TILES.png">  </resource>
+		<vector2 name="25/tex_offset"> 4, 4 </vector2>
+		<resource name="25/material"></resource>		<rect2 name="25/region"> 24, 40, 8, 8 </rect2>
+		<vector2 name="25/occluder_offset"> -0, -0 </vector2>
+		<resource name="25/occluder"></resource>		<vector2 name="25/navigation_offset"> -0, -0 </vector2>
+		<resource name="25/navigation"></resource>		<vector2 name="25/shape_offset"> 0, 0 </vector2>
+		<array name="25/shapes" len="0" shared="false">
 		</array>
 
 	</main_resource>

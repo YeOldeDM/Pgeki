@@ -8,6 +8,7 @@ extends RigidBody2D
 
 # Mob Spawner #
 var mob = preload('res://blub.xml')
+var lemon = preload('res://lemon.xml')
 
 # Spear preload #
 var spear = preload('res://spear.xml')
@@ -49,6 +50,7 @@ var SPEAR_DROP = -40.0
 
 var respawn_point = Vector2(100,50)
 
+var lemon_class = preload('res://lemon.gd')
 
 #################################
 #	Custom physics integration	#
@@ -117,6 +119,8 @@ func _integrate_forces(state):
 		if (ci.dot(Vector2(0,-1))>0.6):		#check slope for 'floor'
 			found_floor = true
 			floor_index = x
+
+			
 			
 	#We have landed on the floor
 	if (found_floor):
@@ -306,7 +310,7 @@ func _process(delta):
 		
 	#DEV HACK: Spawn a Blub (or twenty) behind you
 	if Input.is_action_pressed('DEV_spawn_blub'):
-		var guy = mob.instance()
+		var guy = lemon.instance()
 		var pos = get_pos()
 		pos.x -= 10*facing
 		pos.y -= 10
