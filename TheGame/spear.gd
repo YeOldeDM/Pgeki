@@ -8,14 +8,21 @@ var THROW_ATK=13	#frames before throwing
 # Switches
 var pre_throw=true
 var did_hit=false
-var blinker=true
+
 
 # Holders
 var lifetime = -1
 
 # Timers
 var hold_timer=0
+
+# blinker params
+var blink_freq1 = 1
+var blink_freq2 = 5
+
+var blinker=true
 var blink_timer=0
+
 
 
 #  CUSTOM PHYSICS INTEGRATION  #
@@ -53,7 +60,7 @@ func _process(delta):
 			done()	#our timelimit is up. We are done.
 			
 		if(lifetime >= TIME_LIMIT*0.65):	#Start blinking 65% into our life time
-			blink()
+			get_node('/root/globals').blink(self)
 
 
 func done():	#Tell the player he can shoot again, then kill ourselves
@@ -72,6 +79,6 @@ func blink():
 	else:
 		blink_timer += 1
 		if(blink_timer > 3):
-			get_child(0).set_modulate(Color(1.0,0.5,0.5,1.0))
+			get_child(0).set_modulate(Color(1.0,1.0,1.0,1.0))
 			blink_timer = 0
 			blinker=true

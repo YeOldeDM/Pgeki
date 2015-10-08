@@ -29,8 +29,14 @@ var is_hit=false
 
 # timers #
 var hit_timer=0
-var hit_timelimit=3.0
+var hit_timelimit = 2.0	#seconds of invulnerability after being hit
 
+# blinker params
+var blink_freq1 = 2
+var blink_freq2 = 1
+
+var blinker=true
+var blink_timer=0
 
 # Movement Variables #
 var WALK_ATK = 320.0
@@ -320,8 +326,11 @@ func _process(delta):
 	# Handle hit timer if we are hit
 	if is_hit:
 		hit_timer += delta
+		get_node('/root/globals').blink(self)
 		if hit_timer >= hit_timelimit:
 			hit_timer=0
 			is_hit=false
+			get_node('sprite').set_modulate( Color(1.0,1.0,1.0,1.0) )
+		
 		
 
