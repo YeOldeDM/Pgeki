@@ -1,70 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="7" version="1.1" version_name="Godot Engine v1.1.stable.d3b42e41b0">
-	<ext_resource path="res://pigfrog.gd" type="Script"></ext_resource>
-	<ext_resource path="res://graphics/pigfrog_walk.png" type="Texture"></ext_resource>
-	<resource type="RectangleShape2D" path="local://1">
+<resource_file type="PackedScene" subresource_count="4" version="1.1" version_name="Godot Engine v1.1.stable.d3b42e41b0">
+	<ext_resource path="res://graphics/phlem.png" type="Texture"></ext_resource>
+	<resource type="RayShape2D" path="local://1">
 		<real name="custom_solver_bias"> 0 </real>
-		<vector2 name="extents"> 10, 10 </vector2>
+		<real name="length"> 20 </real>
 
 	</resource>
-	<resource type="CircleShape2D" path="local://2">
-		<real name="custom_solver_bias"> 0 </real>
-		<real name="radius"> 10 </real>
-
-	</resource>
-	<resource type="Animation" path="local://3">
-		<real name="length"> 1.6 </real>
+	<resource type="Animation" path="local://2">
+		<string name="resource/name"> "cycle" </string>
+		<real name="length"> 0.4 </real>
 		<bool name="loop"> True </bool>
 		<real name="step"> 0.1 </real>
 		<string name="tracks/0/type"> "value" </string>
-		<node_path name="tracks/0/path"> "sprite:frame" </node_path>
+		<node_path name="tracks/0/path"> "Sprite:frame" </node_path>
 		<int name="tracks/0/interp"> 1 </int>
 		<dictionary name="tracks/0/keys" shared="false">
 			<string> "cont" </string>
 			<bool> False </bool>
 			<string> "times" </string>
-			<real_array  len="12"> 				0, 0.2, 0.3, 0.4, 0.5, 0.6, 0.8, 1.1, 1.2, 1.3, 1.4, 1.5 </real_array>
+			<real_array  len="4"> 				0, 0.1, 0.2, 0.3 </real_array>
 			<string> "transitions" </string>
-			<real_array  len="12"> 				1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 </real_array>
+			<real_array  len="4"> 				1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="12" shared="false">
-				<int> 5 </int>
-				<int> 6 </int>
-				<int> 7 </int>
-				<int> 8 </int>
-				<int> 7 </int>
-				<int> 8 </int>
-				<int> 9 </int>
-				<int> 10 </int>
-				<int> 11 </int>
-				<int> 12 </int>
-				<int> 13 </int>
-				<int> 1 </int>
-			</array>
-		</dictionary>
-
-	</resource>
-	<resource type="Animation" path="local://4">
-		<real name="length"> 0.5 </real>
-		<bool name="loop"> True </bool>
-		<real name="step"> 0.1 </real>
-		<string name="tracks/0/type"> "value" </string>
-		<node_path name="tracks/0/path"> "sprite:frame" </node_path>
-		<int name="tracks/0/interp"> 1 </int>
-		<dictionary name="tracks/0/keys" shared="false">
-			<string> "cont" </string>
-			<bool> False </bool>
-			<string> "times" </string>
-			<real_array  len="5"> 				0, 0.1, 0.2, 0.3, 0.4 </real_array>
-			<string> "transitions" </string>
-			<real_array  len="5"> 				1, 1, 1, 1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="5" shared="false">
+			<array  len="4" shared="false">
 				<int> 0 </int>
 				<int> 1 </int>
 				<int> 2 </int>
 				<int> 3 </int>
-				<int> 4 </int>
 			</array>
 		</dictionary>
 
@@ -76,9 +38,9 @@
 			<string> "conns" </string>
 			<int_array  len="0"> 				 </int_array>
 			<string> "names" </string>
-			<string_array  len="82">
-				<string> "PigFrog" </string>
+			<string_array  len="48">
 				<string> "RigidBody2D" </string>
+				<string> "StaticBody2D" </string>
 				<string> "_import_path" </string>
 				<string> "visibility/visible" </string>
 				<string> "visibility/opacity" </string>
@@ -94,32 +56,13 @@
 				<string> "shapes/0/shape" </string>
 				<string> "shapes/0/transform" </string>
 				<string> "shapes/0/trigger" </string>
-				<string> "shapes/1/shape" </string>
-				<string> "shapes/1/transform" </string>
-				<string> "shapes/1/trigger" </string>
-				<string> "shapes/2/shape" </string>
-				<string> "shapes/2/transform" </string>
-				<string> "shapes/2/trigger" </string>
 				<string> "collision/layers" </string>
 				<string> "collision/mask" </string>
-				<string> "mode" </string>
-				<string> "mass" </string>
+				<string> "constant_linear_velocity" </string>
+				<string> "constant_angular_velocity" </string>
 				<string> "friction" </string>
 				<string> "bounce" </string>
-				<string> "gravity_scale" </string>
-				<string> "custom_integrator" </string>
-				<string> "continuous_cd" </string>
-				<string> "contacts_reported" </string>
-				<string> "contact_monitor" </string>
-				<string> "sleeping" </string>
-				<string> "can_sleep" </string>
-				<string> "velocity/linear" </string>
-				<string> "velocity/angular" </string>
-				<string> "damp_override/linear" </string>
-				<string> "damp_override/angular" </string>
-				<string> "script/script" </string>
 				<string> "__meta__" </string>
-				<string> "sprite" </string>
 				<string> "Sprite" </string>
 				<string> "texture" </string>
 				<string> "centered" </string>
@@ -132,40 +75,25 @@
 				<string> "modulate" </string>
 				<string> "region" </string>
 				<string> "region_rect" </string>
-				<string> "animator" </string>
 				<string> "AnimationPlayer" </string>
 				<string> "playback/process_mode" </string>
 				<string> "playback/default_blend_time" </string>
 				<string> "root/root" </string>
-				<string> "anims/attack" </string>
-				<string> "anims/walk" </string>
+				<string> "anims/cycle" </string>
 				<string> "playback/active" </string>
 				<string> "playback/speed" </string>
 				<string> "blend_times" </string>
 				<string> "autoplay" </string>
-				<string> "CollisionShape2D2" </string>
 				<string> "CollisionShape2D" </string>
 				<string> "shape" </string>
 				<string> "trigger" </string>
-				<string> "CollisionShape2D1" </string>
-				<string> "raycast_left" </string>
-				<string> "RayCast2D" </string>
-				<string> "enabled" </string>
-				<string> "cast_to" </string>
-				<string> "layer_mask" </string>
-				<string> "raycast_right" </string>
-				<string> "VisibilityEnabler2D" </string>
-				<string> "rect" </string>
-				<string> "enabler/pause_animations" </string>
-				<string> "enabler/freeze_bodies" </string>
-				<string> "enabler/pause_particles" </string>
 			</string_array>
 			<string> "node_count" </string>
-			<int> 9 </int>
+			<int> 4 </int>
 			<string> "nodes" </string>
-			<int_array  len="363"> 				-1, -1, 1, 0, -1, 40, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 12, 8, 13, 9, 14, 10, 15, 11, 16, 8, 17, 12, 18, 13, 19, 8, 20, 12, 21, 14, 22, 8, 23, 3, 24, 3, 25, 15, 26, 16, 27, 5, 28, 5, 29, 2, 30, 8, 31, 7, 32, 9, 33, 8, 34, 8, 35, 1, 36, 4, 37, 5, 38, 17, 39, 17, 40, 18, 41, 19, 0, 0, 0, 43, 42, -1, 21, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 44, 20, 45, 1, 46, 4, 47, 8, 48, 8, 49, 9, 50, 21, 51, 3, 52, 22, 53, 8, 54, 23, 0, 0, 0, 56, 55, -1, 10, 2, 0, 57, 3, 58, 5, 59, 24, 60, 25, 61, 26, 62, 1, 63, 2, 64, 27, 65, 28, 0, 0, 0, 67, 66, -1, 12, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 29, 8, 5, 9, 30, 10, 7, 11, 1, 68, 10, 69, 8, 0, 0, 0, 67, 67, -1, 12, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 31, 8, 5, 9, 32, 10, 7, 11, 1, 68, 12, 69, 8, 0, 0, 0, 67, 70, -1, 12, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 33, 8, 5, 9, 32, 10, 7, 11, 1, 68, 12, 69, 8, 0, 0, 0, 72, 71, -1, 14, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 34, 8, 5, 9, 35, 10, 7, 11, 1, 73, 1, 74, 36, 75, 3, 41, 37, 0, 0, 0, 72, 76, -1, 14, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 38, 8, 5, 9, 39, 10, 7, 11, 1, 73, 1, 74, 36, 75, 3, 41, 40, 0, 0, 0, 77, 77, -1, 15, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 41, 8, 5, 9, 6, 10, 7, 11, 1, 78, 42, 79, 1, 80, 1, 81, 1, 41, 43, 0 </int_array>
+			<int_array  len="156"> 				-1, -1, 1, 0, -1, 22, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 12, 8, 13, 3, 14, 9, 15, 10, 16, 8, 17, 3, 18, 3, 19, 4, 20, 5, 21, 2, 22, 5, 23, 11, 0, 0, 0, 24, 24, -1, 21, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 25, 12, 26, 1, 27, 4, 28, 8, 29, 8, 30, 3, 31, 13, 32, 7, 33, 14, 34, 8, 35, 15, 0, 0, 0, 36, 36, -1, 9, 2, 0, 37, 3, 38, 5, 39, 16, 40, 17, 41, 1, 42, 2, 43, 18, 44, 19, 0, 0, 0, 45, 45, -1, 12, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 20, 8, 21, 9, 22, 10, 7, 11, 1, 46, 9, 47, 8, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="44" shared="false">
+			<array  len="23" shared="false">
 				<node_path> "" </node_path>
 				<bool> True </bool>
 				<real> 1 </real>
@@ -175,25 +103,17 @@
 				<vector2> 1, 1 </vector2>
 				<int> 0 </int>
 				<bool> False </bool>
-				<int> 3 </int>
 				<resource  resource_type="Shape2D" path="local://1">  </resource>
-				<matrix32> 0.615385, -0, 0, 0.5, -4.76837e-07, 1.5 </matrix32>
-				<resource  resource_type="Shape2D" path="local://2">  </resource>
-				<matrix32> 0.384616, -0, 0, 0.384616, 3, 9 </matrix32>
-				<matrix32> 0.384616, -0, 0, 0.384616, -3, 9 </matrix32>
-				<int> 2 </int>
-				<real> 200 </real>
-				<real> -1 </real>
-				<resource  resource_type="Script" path="res://pigfrog.gd">  </resource>
+				<matrix32> -4.37114e-08, -1, 0.379075, -1.65699e-08, 0.20925, -0.171999 </matrix32>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_screen__" </string>
-					<string> "Script" </string>
+					<string> "2D" </string>
 					<string> "__editor_plugin_states__" </string>
 					<dictionary  shared="false">
 						<string> "2D" </string>
 						<dictionary  shared="false">
 							<string> "ofs" </string>
-							<vector2> -49.8609, -43.1833 </vector2>
+							<vector2> -37.5512, -30.55 </vector2>
 							<string> "snap_grid" </string>
 							<bool> False </bool>
 							<string> "snap_offset" </string>
@@ -209,11 +129,11 @@
 							<string> "snap_rotation_step" </string>
 							<real> 0.261799 </real>
 							<string> "snap_show_grid" </string>
-							<bool> True </bool>
+							<bool> False </bool>
 							<string> "snap_step" </string>
 							<vector2> 10, 10 </vector2>
 							<string> "zoom" </string>
-							<real> 7.40247 </real>
+							<real> 8.202183 </real>
 						</dictionary>
 						<string> "3D" </string>
 						<dictionary  shared="false">
@@ -307,16 +227,6 @@
 							<string> "znear" </string>
 							<real> 0.1 </real>
 						</dictionary>
-						<string> "Script" </string>
-						<dictionary  shared="false">
-							<string> "current" </string>
-							<int> 0 </int>
-							<string> "sources" </string>
-							<array  len="2" shared="false">
-								<string> "res://pigfrog.gd" </string>
-								<string> "res://spear.gd" </string>
-							</array>
-						</dictionary>
 					</dictionary>
 					<string> "__editor_run_settings__" </string>
 					<dictionary  shared="false">
@@ -326,40 +236,18 @@
 						<int> 0 </int>
 					</dictionary>
 				</dictionary>
-				<resource  resource_type="Texture" path="res://graphics/pigfrog_walk.png">  </resource>
-				<int> 5 </int>
+				<resource  resource_type="Texture" path="res://graphics/phlem.png">  </resource>
+				<int> 4 </int>
 				<color> 1, 1, 1, 1 </color>
 				<rect2> 0, 0, 0, 0 </rect2>
 				<node_path> ".." </node_path>
-				<resource  resource_type="Animation" path="local://3">  </resource>
-				<resource  resource_type="Animation" path="local://4">  </resource>
+				<resource  resource_type="Animation" path="local://2">  </resource>
 				<array  len="0" shared="false">
 				</array>
-				<string> "attack" </string>
-				<vector2> -4.76837e-07, 1.5 </vector2>
-				<vector2> 0.615385, 0.5 </vector2>
-				<vector2> 3, 9 </vector2>
-				<vector2> 0.384616, 0.384616 </vector2>
-				<vector2> -3, 9 </vector2>
-				<vector2> -6.5, 6 </vector2>
-				<vector2> 0.234375, 0.21875 </vector2>
-				<vector2> 0, 45 </vector2>
-				<dictionary  shared="false">
-					<string> "_edit_lock_" </string>
-					<bool> True </bool>
-				</dictionary>
-				<vector2> 7, 6 </vector2>
-				<vector2> 0.25, 0.21875 </vector2>
-				<dictionary  shared="false">
-					<string> "_edit_lock_" </string>
-					<bool> True </bool>
-				</dictionary>
-				<vector2> 0, 4 </vector2>
-				<rect2> -10, -10, 20, 20 </rect2>
-				<dictionary  shared="false">
-					<string> "_edit_lock_" </string>
-					<bool> True </bool>
-				</dictionary>
+				<string> "cycle" </string>
+				<vector2> 0.20925, -0.171999 </vector2>
+				<real> 90 </real>
+				<vector2> 1, 0.379075 </vector2>
 			</array>
 			<string> "version" </string>
 			<int> 1 </int>
