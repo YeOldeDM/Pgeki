@@ -31,7 +31,7 @@ func _integrate_forces(state):
 	var step = state.get_step()				#time delta
 	
 	if (bounce_timer >= BOUNCE_RATE):
-		lv.y -= BOUNCE_VELOCITY
+		lv.y -= BOUNCE_VELOCITY * 0.6
 		
 		
 		bounce_timer = 0
@@ -43,8 +43,8 @@ func _integrate_forces(state):
 		var my_x = get_pos().x
 		if(player_x > my_x):
 			face = 1.0
-		lv.x += ((BOUNCE_VELOCITY*10)*face)*step
-	
+		lv.x += ((BOUNCE_VELOCITY*20)*face)*step
+		get_node('animator').play('bounce')
 	#contact handling
 	for i in range(state.get_contact_count()):
 		var col = state.get_contact_collider_object(i)
@@ -57,7 +57,7 @@ func _integrate_forces(state):
 				first_land=true
 			#if we are hit with the spear..
 			if(col extends spear_class and not is_hit):
-				print("I got spear'd!")
+				print(get_name(),": I got spear'd!")
 				HEARTS -= 1
 				if(HEARTS <=0):
 					_die()
