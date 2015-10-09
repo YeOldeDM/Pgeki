@@ -277,12 +277,12 @@ func done_shooting():
 #################################
 #	I Get Hit by Something!		#
 #################################
-func get_hit(origin):
+func get_hit(origin, amt=1):
 	if not is_hit:	#if we're not already hit
 		var life = get_node('/root/globals').LIFE	#get global Life value
 		
 		if(life>0):	#if we are not dead yet..
-			life -= 1	#lose some life (should be an argument)
+			life -= amt	#lose some life 
 			
 		get_node('/root/globals').LIFE = life		#set global Life value
 		
@@ -290,9 +290,9 @@ func get_hit(origin):
 		var target_pos = origin.get_pos()	#position of origin
 		var my_pos = get_pos()				#my position
 		var vect = target_pos - my_pos		#Vector between the two
-		vect.y = -abs(vect.y)				#ensure 'upward' kick
 
-		set_linear_velocity(-vect*18)		#set velocity inverted
+
+		set_linear_velocity(-vect*12)		#set velocity inverted and amplified
 		
 		#call draw function to HUD Hearts
 		get_node('/root/Root/hud/hearts')._draw_hearts()

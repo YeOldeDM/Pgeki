@@ -23,17 +23,14 @@
 			<string> "cont" </string>
 			<bool> False </bool>
 			<string> "times" </string>
-			<real_array  len="12"> 				0, 0.2, 0.3, 0.4, 0.5, 0.6, 0.8, 1.1, 1.2, 1.3, 1.4, 1.5 </real_array>
+			<real_array  len="9"> 				0, 0.2, 0.4, 0.8, 1.1, 1.2, 1.3, 1.4, 1.5 </real_array>
 			<string> "transitions" </string>
-			<real_array  len="12"> 				1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 </real_array>
+			<real_array  len="9"> 				1, 1, 1, 1, 1, 1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="12" shared="false">
+			<array  len="9" shared="false">
 				<int> 5 </int>
 				<int> 6 </int>
-				<int> 7 </int>
-				<int> 8 </int>
-				<int> 7 </int>
-				<int> 8 </int>
+				<int> 6 </int>
 				<int> 0 </int>
 				<int> 10 </int>
 				<int> 11 </int>
@@ -76,7 +73,7 @@
 			<string> "conns" </string>
 			<int_array  len="0"> 				 </int_array>
 			<string> "names" </string>
-			<string_array  len="85">
+			<string_array  len="82">
 				<string> "PigFrog" </string>
 				<string> "RigidBody2D" </string>
 				<string> "_import_path" </string>
@@ -119,19 +116,6 @@
 				<string> "damp_override/angular" </string>
 				<string> "script/script" </string>
 				<string> "__meta__" </string>
-				<string> "sprite" </string>
-				<string> "Sprite" </string>
-				<string> "texture" </string>
-				<string> "centered" </string>
-				<string> "offset" </string>
-				<string> "flip_h" </string>
-				<string> "flip_v" </string>
-				<string> "vframes" </string>
-				<string> "hframes" </string>
-				<string> "frame" </string>
-				<string> "modulate" </string>
-				<string> "region" </string>
-				<string> "region_rect" </string>
 				<string> "animator" </string>
 				<string> "AnimationPlayer" </string>
 				<string> "playback/process_mode" </string>
@@ -148,6 +132,19 @@
 				<string> "shape" </string>
 				<string> "trigger" </string>
 				<string> "CollisionShape2D1" </string>
+				<string> "sprite" </string>
+				<string> "Sprite" </string>
+				<string> "texture" </string>
+				<string> "centered" </string>
+				<string> "offset" </string>
+				<string> "flip_h" </string>
+				<string> "flip_v" </string>
+				<string> "vframes" </string>
+				<string> "hframes" </string>
+				<string> "frame" </string>
+				<string> "modulate" </string>
+				<string> "region" </string>
+				<string> "region_rect" </string>
 				<string> "raycast_left" </string>
 				<string> "RayCast2D" </string>
 				<string> "enabled" </string>
@@ -159,16 +156,13 @@
 				<string> "enabler/pause_animations" </string>
 				<string> "enabler/freeze_bodies" </string>
 				<string> "enabler/pause_particles" </string>
-				<string> "shooter_left" </string>
-				<string> "Position2D" </string>
-				<string> "shooter_right" </string>
 			</string_array>
 			<string> "node_count" </string>
-			<int> 11 </int>
+			<int> 9 </int>
 			<string> "nodes" </string>
-			<int_array  len="417"> 				-1, -1, 1, 0, -1, 40, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 12, 8, 13, 9, 14, 10, 15, 11, 16, 8, 17, 12, 18, 13, 19, 8, 20, 12, 21, 14, 22, 8, 23, 3, 24, 3, 25, 15, 26, 16, 27, 5, 28, 5, 29, 2, 30, 8, 31, 7, 32, 9, 33, 8, 34, 8, 35, 1, 36, 4, 37, 5, 38, 17, 39, 17, 40, 18, 41, 19, 0, 0, 0, 43, 42, -1, 21, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 44, 20, 45, 1, 46, 4, 47, 8, 48, 8, 49, 9, 50, 21, 51, 22, 52, 23, 53, 8, 54, 24, 0, 0, 0, 56, 55, -1, 10, 2, 0, 57, 3, 58, 5, 59, 25, 60, 26, 61, 27, 62, 1, 63, 2, 64, 28, 65, 29, 0, 0, 0, 67, 66, -1, 12, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 30, 8, 5, 9, 31, 10, 7, 11, 1, 68, 10, 69, 8, 0, 0, 0, 67, 67, -1, 12, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 32, 8, 5, 9, 33, 10, 7, 11, 1, 68, 12, 69, 8, 0, 0, 0, 67, 70, -1, 12, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 34, 8, 5, 9, 33, 10, 7, 11, 1, 68, 12, 69, 8, 0, 0, 0, 72, 71, -1, 14, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 35, 8, 5, 9, 36, 10, 7, 11, 1, 73, 1, 74, 37, 75, 3, 41, 38, 0, 0, 0, 72, 76, -1, 14, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 39, 8, 5, 9, 40, 10, 7, 11, 1, 73, 1, 74, 37, 75, 3, 41, 41, 0, 0, 0, 77, 77, -1, 15, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 42, 8, 5, 9, 6, 10, 7, 11, 1, 78, 43, 79, 1, 80, 1, 81, 1, 41, 44, 0, 0, 0, 83, 82, -1, 10, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 45, 8, 5, 9, 6, 10, 7, 11, 1, 0, 0, 0, 83, 84, -1, 10, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 46, 8, 5, 9, 6, 10, 7, 11, 1, 0 </int_array>
+			<int_array  len="359"> 				-1, -1, 1, 0, -1, 40, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 12, 8, 13, 9, 14, 10, 15, 11, 16, 8, 17, 12, 18, 13, 19, 8, 20, 12, 21, 14, 22, 8, 23, 3, 24, 3, 25, 15, 26, 16, 27, 5, 28, 5, 29, 2, 30, 8, 31, 7, 32, 9, 33, 8, 34, 8, 35, 1, 36, 4, 37, 5, 38, 17, 39, 17, 40, 18, 41, 19, 0, 0, 0, 43, 42, -1, 10, 2, 0, 44, 3, 45, 5, 46, 20, 47, 21, 48, 22, 49, 1, 50, 2, 51, 23, 52, 24, 0, 0, 0, 54, 53, -1, 12, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 25, 8, 5, 9, 26, 10, 7, 11, 1, 55, 10, 56, 8, 0, 0, 0, 54, 54, -1, 12, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 27, 8, 5, 9, 28, 10, 7, 11, 1, 55, 12, 56, 8, 0, 0, 0, 54, 57, -1, 12, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 29, 8, 5, 9, 28, 10, 7, 11, 1, 55, 12, 56, 8, 0, 0, 0, 59, 58, -1, 21, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 60, 30, 61, 1, 62, 4, 63, 8, 64, 8, 65, 9, 66, 31, 67, 3, 68, 32, 69, 8, 70, 33, 0, 0, 0, 72, 71, -1, 13, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 34, 8, 5, 9, 35, 10, 7, 11, 1, 73, 1, 74, 36, 75, 3, 0, 0, 0, 72, 76, -1, 13, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 37, 8, 5, 9, 38, 10, 7, 11, 1, 73, 1, 74, 36, 75, 3, 0, 0, 0, 77, 77, -1, 15, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 39, 8, 5, 9, 6, 10, 7, 11, 1, 78, 40, 79, 1, 80, 1, 81, 1, 41, 41, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="47" shared="false">
+			<array  len="42" shared="false">
 				<node_path> "" </node_path>
 				<bool> True </bool>
 				<real> 1 </real>
@@ -315,10 +309,11 @@
 							<string> "current" </string>
 							<int> 0 </int>
 							<string> "sources" </string>
-							<array  len="3" shared="false">
+							<array  len="4" shared="false">
 								<string> "res://pigfrog.gd" </string>
 								<string> "res://spear.gd" </string>
 								<string> "res://player.gd" </string>
+								<string> "res://global.gd" </string>
 							</array>
 						</dictionary>
 					</dictionary>
@@ -330,11 +325,6 @@
 						<int> 0 </int>
 					</dictionary>
 				</dictionary>
-				<resource  resource_type="Texture" path="res://graphics/pigfrog_walk.png">  </resource>
-				<int> 5 </int>
-				<int> 10 </int>
-				<color> 1, 1, 1, 1 </color>
-				<rect2> 0, 0, 0, 0 </rect2>
 				<node_path> ".." </node_path>
 				<resource  resource_type="Animation" path="local://3">  </resource>
 				<resource  resource_type="Animation" path="local://4">  </resource>
@@ -346,27 +336,21 @@
 				<vector2> 3, 9 </vector2>
 				<vector2> 0.384616, 0.384616 </vector2>
 				<vector2> -3, 9 </vector2>
-				<vector2> -6.5, 6 </vector2>
+				<resource  resource_type="Texture" path="res://graphics/pigfrog_walk.png">  </resource>
+				<int> 5 </int>
+				<color> 1, 1, 1, 1 </color>
+				<rect2> 0, 0, 0, 0 </rect2>
+				<vector2> -9.5, 6 </vector2>
 				<vector2> 0.234375, 0.21875 </vector2>
 				<vector2> 0, 45 </vector2>
-				<dictionary  shared="false">
-					<string> "_edit_lock_" </string>
-					<bool> True </bool>
-				</dictionary>
-				<vector2> 7, 6 </vector2>
+				<vector2> 9.5, 6 </vector2>
 				<vector2> 0.25, 0.21875 </vector2>
-				<dictionary  shared="false">
-					<string> "_edit_lock_" </string>
-					<bool> True </bool>
-				</dictionary>
 				<vector2> 0, 4 </vector2>
 				<rect2> -10, -10, 20, 20 </rect2>
 				<dictionary  shared="false">
 					<string> "_edit_lock_" </string>
 					<bool> True </bool>
 				</dictionary>
-				<vector2> -11, 5 </vector2>
-				<vector2> 11, 5 </vector2>
 			</array>
 			<string> "version" </string>
 			<int> 1 </int>

@@ -44,7 +44,6 @@ func _integrate_forces(state):
 		var anim_pos = get_node('animator').get_current_animation_pos()
 
 		if anim_pos >= get_node('animator').get_current_animation_length()-0.1:
-			print('time to walk!')
 			mystate = STATE_WALKING
 			did_shoot = false
 		elif anim_pos >= 1.0:
@@ -101,23 +100,23 @@ func _ready():
 
 func _shoot():
 	if not did_shoot:
-		print("ACHOO!!")
 		did_shoot=true
 		
 		var left_pos = get_pos()
 		left_pos.x -= 6
+		left_pos.y += 3
 		var shot = bullet.instance()
 		shot.set_rot(deg2rad(180.0))
 		shot.set_pos(left_pos)
 		get_parent().add_child(shot)
 		PS2D.body_add_collision_exception(shot.get_rid(),get_rid())
-		shot.set_linear_velocity( Vector2(-100,0) )
+		shot.set_linear_velocity( Vector2(-400,0) )
 		
 		var right_pos = get_pos()
 		right_pos.x += 6
+		right_pos.y += 3
 		var shot = bullet.instance()
-		#shot.set_rot(deg2rad(180.0))
 		shot.set_pos(right_pos)
 		get_parent().add_child(shot)
 		PS2D.body_add_collision_exception(shot.get_rid(),get_rid())
-		shot.set_linear_velocity( Vector2(100,0) )
+		shot.set_linear_velocity( Vector2(400,0) )
