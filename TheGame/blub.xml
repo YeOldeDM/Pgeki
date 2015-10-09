@@ -17,7 +17,7 @@
 		<bool name="loop"> False </bool>
 		<real name="step"> 0.1 </real>
 		<string name="tracks/0/type"> "value" </string>
-		<node_path name="tracks/0/path"> "Sprite 2:frame" </node_path>
+		<node_path name="tracks/0/path"> "sprite:frame" </node_path>
 		<int name="tracks/0/interp"> 1 </int>
 		<dictionary name="tracks/0/keys" shared="false">
 			<string> "cont" </string>
@@ -87,7 +87,7 @@
 				<string> "damp_override/angular" </string>
 				<string> "script/script" </string>
 				<string> "__meta__" </string>
-				<string> "Sprite 2" </string>
+				<string> "sprite" </string>
 				<string> "Sprite" </string>
 				<string> "texture" </string>
 				<string> "centered" </string>
@@ -135,7 +135,7 @@
 				<resource  resource_type="Shape2D" path="local://1">  </resource>
 				<matrix32> 0.769231, -0, 0, 0.807692, 2.38419e-07, -2.5 </matrix32>
 				<resource  resource_type="Shape2D" path="local://2">  </resource>
-				<matrix32> 0.257378, -0, 0, 0.0947687, 0.5, 4.55231 </matrix32>
+				<matrix32> 0.428963, -0, 0, 0.473844, -0.5, -3.23844 </matrix32>
 				<real> 20 </real>
 				<int> 3 </int>
 				<real> -1 </real>
@@ -265,13 +265,14 @@
 						<string> "Script" </string>
 						<dictionary  shared="false">
 							<string> "current" </string>
-							<int> 2 </int>
+							<int> 4 </int>
 							<string> "sources" </string>
-							<array  len="4" shared="false">
+							<array  len="5" shared="false">
 								<string> "res://spear.gd" </string>
 								<string> "res://player.gd" </string>
 								<string> "res://blub.gd" </string>
 								<string> "res://score.gd" </string>
+								<string> "res://global.gd" </string>
 							</array>
 						</dictionary>
 					</dictionary>
@@ -295,8 +296,8 @@
 				<string> "" </string>
 				<vector2> 2.38419e-07, -2.5 </vector2>
 				<vector2> 0.769231, 0.807692 </vector2>
-				<vector2> 0.5, 4.55231 </vector2>
-				<vector2> 0.257378, 0.0947687 </vector2>
+				<vector2> -0.5, -3.23844 </vector2>
+				<vector2> 0.428963, 0.473844 </vector2>
 			</array>
 			<string> "version" </string>
 			<int> 1 </int>
